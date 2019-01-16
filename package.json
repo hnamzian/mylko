@@ -14,5 +14,8 @@
     "mosca": "^2.8.3",
     "sqlite3": "^4.0.4",
     "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
