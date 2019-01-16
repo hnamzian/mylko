@@ -1,0 +1,4 @@
+{
+  "mqtt_port": "mqtt_port",
+  "server_port": "server_port"
+}

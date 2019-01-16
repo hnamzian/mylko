@@ -1,0 +1,15 @@
+{
+  "mqtt_port": "",
+  "server_port": "",
+
+  "ChipId": "80:7D:3A:45:59:00",
+  "voltage": 33,
+  "objecttemp": 308,
+  "ambientTemp": 235,
+  "volume": 3659,
+  "tagnumber": [211, 244, 225, 84, 129],
+  "unitname": "test",
+  "id": 7,
+  "rfid": "xxxxxx"
+  
+}
