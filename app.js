@@ -1,5 +1,5 @@
 const config = require("config");
-const db = require("./startup/db")();
+const db = require("./startup/db");
 
 const broker = require("./startup/broker")();
 
