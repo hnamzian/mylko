@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize("mylko", "root", "Ho$$einjo0n", {
+const sequelize = new Sequelize("mylko", "mylkoapp", "123", {
   host: "localhost",
   dialect: "mysql",
   operatorsAliases: false,
@@ -11,9 +11,6 @@ const sequelize = new Sequelize("mylko", "root", "Ho$$einjo0n", {
     acquire: 30000,
     idle: 10000
   }
-
-  // SQLite only
-  //   storage: './dairy.sqlite'
 });
 
 sequelize
