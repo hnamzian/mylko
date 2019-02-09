@@ -1,4 +1,8 @@
 {
+  "db_database": "db_name",
+  "db_user": "db_user",
+  "db_password": "db_password",
+  "db_host": "db_host",
   "mqtt_port": "mqtt_port",
   "server_port": "server_port"
 }

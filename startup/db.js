@@ -1,24 +1,37 @@
+const config = require("config");
 const Sequelize = require("sequelize");
+const MilkingModel = require("../models/milking");
 
-const sequelize = new Sequelize("mylko", "mylkoapp", "123", {
-  host: "localhost",
-  dialect: "mysql",
-  operatorsAliases: false,
+const sequelize = new Sequelize(
+  config.get("db_database"),
+  config.get("db_user"),
+  config.get("db_password"),
+  {
+    host: config.get("db_host"),
+    dialect: "mysql",
+    operatorsAliases: false,
 
-  pool: {
-    max: 5,
-    min: 0,
-    acquire: 30000,
-    idle: 10000
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
   }
-});
+);
 
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log('Connection has been established successfully.');
-  })
-  .catch(err => {
-    console.error('Unable to connect to the database:', err);
-  });
+const Milking = MilkingModel(sequelize, Sequelize);
 
+// sequelize
+//   .authenticate()
+//   .then(() => {
+//     winston.debug("Connection has been established successfully.");
+//   })
+//   .catch(err => {
+//     winston.error("Unable to connect to the database:", err);
+//   });
+
+module.exports = {
+  sequelize,
+  Milking
+};

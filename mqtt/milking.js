@@ -1,4 +1,4 @@
-const milkDB = require("../models/milk");
+const winston = require("winston")
 
 module.exports = (req, resp, next) => {
     let unit = req.params.unit;
@@ -7,8 +7,7 @@ module.exports = (req, resp, next) => {
     let data = req.payload;
     data = JSON.parse(data)
     // milkDB.addtoTable(data);
-    console.log(`${topic}: ${unit}: ${id} ${data}`);
-//   console.log("sfkjvndf");
+    winston.debug(`${topic}: ${unit}: ${id} ${data}`);
 
   next();
 };

@@ -1,4 +1,8 @@
 {
-    "mqtt_port": "",
-    "server_port": ""
+  "db_database": "mylko",
+  "db_user": "mylkoapp",
+  "db_password": "123",
+  "db_host": "localhost",
+  "mqtt_port": 1881,
+  "server_port": "3000"
 }
