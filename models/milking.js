@@ -1,17 +1,22 @@
 const Sequelize = require("sequelize");
 
 module.exports = (sequelize, Sequelize) => {
-  sequelize.define("Milking", {
-    ChipId: Sequelize.STRING,
+  return sequelize.define("Milking", {
+    id: {
+      type: Sequelize.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
+    chipId: Sequelize.STRING,
     voltage: Sequelize.INTEGER,
     objecttemp: Sequelize.INTEGER,
     ambientTemp: Sequelize.INTEGER,
     volume: Sequelize.INTEGER,
     tagnumber: Sequelize.INTEGER,
     unitname: Sequelize.STRING,
-    id: Sequelize.INTEGER,
     rfid: Sequelize.STRING
   });
+  console.log("milking");
 };
 
 // const sqlite = require("../utilities/sqlite_utils");

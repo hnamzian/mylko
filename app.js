@@ -7,9 +7,8 @@ require("./startup/logging.js")();
 const broker = require("./startup/broker")();
 const server = require("./startup/server")(app);
 
-const mqtt_port = config.get("mqtt_port") || 1881;
-broker.listen(+mqtt_port, () => {
-  winston.debug(`mqtt started at ${mqtt_port}`);
+broker.listen(+broker.get("mqtt_port"), () => {
+  winston.debug(`mqtt started at ${broker.get("mqtt_port")}`);
 });
 
 server.listen(app.get("server_port"), app.get("host"), () => {

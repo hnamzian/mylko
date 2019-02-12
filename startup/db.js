@@ -1,6 +1,7 @@
 const config = require("config");
 const Sequelize = require("sequelize");
 const MilkingModel = require("../models/milking");
+const DeviceModel = require("../models/device");
 
 const sequelize = new Sequelize(
   config.get("db_database"),
@@ -21,6 +22,10 @@ const sequelize = new Sequelize(
 );
 
 const Milking = MilkingModel(sequelize, Sequelize);
+Milking.sync({ force: true });
+
+const Device = MilkingModel(sequelize, Sequelize);
+Milking.sync({ force: true });
 
 // sequelize
 //   .authenticate()
@@ -33,5 +38,6 @@ const Milking = MilkingModel(sequelize, Sequelize);
 
 module.exports = {
   sequelize,
-  Milking
+  Milking,
+  Device
 };
