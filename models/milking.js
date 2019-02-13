@@ -1,5 +1,3 @@
-const Sequelize = require("sequelize");
-
 module.exports = (sequelize, Sequelize) => {
   return sequelize.define("Milking", {
     id: {
@@ -9,14 +7,14 @@ module.exports = (sequelize, Sequelize) => {
     },
     chipId: Sequelize.STRING,
     voltage: Sequelize.INTEGER,
-    objecttemp: Sequelize.INTEGER,
+    temperature: Sequelize.INTEGER,
     ambientTemp: Sequelize.INTEGER,
     volume: Sequelize.INTEGER,
-    tagnumber: Sequelize.INTEGER,
-    unitname: Sequelize.STRING,
-    rfid: Sequelize.STRING
+    parlourName: Sequelize.STRING,
+    sectionName: Sequelize.STRING,
+    unitName: Sequelize.STRING,
+    tagNumber: Sequelize.STRING
   });
-  console.log("milking");
 };
 
 // const sqlite = require("../utilities/sqlite_utils");

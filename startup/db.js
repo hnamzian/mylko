@@ -21,10 +21,11 @@ const sequelize = new Sequelize(
   }
 );
 
+const Device = DeviceModel(sequelize, Sequelize);
 const Milking = MilkingModel(sequelize, Sequelize);
-Milking.sync({ force: true });
+Milking.belongsTo(Device)
 
-const Device = MilkingModel(sequelize, Sequelize);
+Device.sync({ force: true });
 Milking.sync({ force: true });
 
 // sequelize
@@ -39,5 +40,5 @@ Milking.sync({ force: true });
 module.exports = {
   sequelize,
   Milking,
-  Device
+//   Device
 };

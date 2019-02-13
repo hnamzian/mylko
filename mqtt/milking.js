@@ -1,18 +1,21 @@
 const winston = require("winston");
 const { Milking } = require("../startup/db");
 
-module.exports = (req, resp, next) => {
-  let unit = req.params.unit;
-  let id = req.params.id;
-  let topic = req.topic;
+module.exports = async (req, resp, next) => {
+  const parlourName = req.params.parlour;
+  const sectionName = req.params.section;
+  const unitName = req.params.unit;
+  const id = req.params.id;
+  const topic = req.topic;
   let data = req.payload;
   data = JSON.parse(data);
 
-  Milking.create({}).then(console.log);
+  const milk = { ...data, parlourName, sectionName, unitName };
+  await Milking.create(milk);
 
-  winston.debug(`${topic}: ${unit}: ${id} ${data}`);
+  winston.debug(`${topic}: ${unit}: ${id} ${JSON.stringify(milk)}`);
 
-  resp.topic("$milking/response").publish("success");
+  //   resp.topic("$milking/response").publish("success");
 
   next();
 };
