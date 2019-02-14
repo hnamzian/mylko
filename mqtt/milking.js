@@ -10,11 +10,14 @@ module.exports = async (req, resp, next) => {
   let data = req.payload;
   data = JSON.parse(data);
 
+  // ToDo: device validation
+  // ToDo: find device by macAddress and add deviceId to milk data
   const milk = { ...data, parlourName, sectionName, unitName };
   await Milking.create(milk);
 
   winston.debug(`${topic}: ${unit}: ${id} ${JSON.stringify(milk)}`);
 
+  // ToDo: publish response on request
   //   resp.topic("$milking/response").publish("success");
 
   next();
