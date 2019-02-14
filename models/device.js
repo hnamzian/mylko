@@ -5,10 +5,10 @@ module.exports = (sequelize, Sequelize) => {
       primaryKey: true,
       autoIncrement: true
     },
-    mac: Sequelize.STRING,
-    parlourName: Sequelize.INTEGER,
-    sectionName: Sequelize.INTEGER,
-    unitName: Sequelize.INTEGER,
+    macAddress: Sequelize.STRING,
+    parlourName: Sequelize.STRING,
+    sectionName: Sequelize.STRING,
+    unitName: Sequelize.STRING,
     type: {
       type: Sequelize.ENUM,
       values: ["MILKING"]

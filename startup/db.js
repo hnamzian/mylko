@@ -40,5 +40,5 @@ Milking.sync({ force: true });
 module.exports = {
   sequelize,
   Milking,
-//   Device
+  Device
 };

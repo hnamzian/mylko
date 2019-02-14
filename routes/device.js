@@ -10,13 +10,13 @@ router.post("/register", async (req, resp, next) => {
       message: "Device existed."
     });
   }
-
+  
   const result = await Device.create({
-    macAddress: req.macAddress,
-    parlourName: req.parlourName,
-    sectionName: req.sectionName,
-    unitName: req.unitName,
-    type: req.type
+    macAddress: req.body.macAddress,
+    parlourName: req.body.parlourName,
+    sectionName: req.body.sectionName,
+    unitName: req.body.unitName,
+    type: req.body.type
   });
 
   resp.send({
@@ -40,3 +40,5 @@ router.get(":id", async (req, resp, next) => {
     device: result
   });
 });
+
+module.exports = router;
