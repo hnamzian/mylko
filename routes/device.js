@@ -25,15 +25,15 @@ router.post("/register", async (req, resp, next) => {
   });
 });
 
-router.get("all", async (req, resp, next) => {
-  const result = await Device.fondAll();
+router.get("/all", async (req, resp, next) => {
+  const result = await Device.findAll();
   return resp.send({
     success: true,
     devices: result
   });
 });
 
-router.get(":id", async (req, resp, next) => {
+router.get("/:id", async (req, resp, next) => {
   const result = await Device.findById(req.params.id);
   return resp.send({
     success: true,
