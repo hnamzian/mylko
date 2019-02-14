@@ -10,7 +10,7 @@ router.post("/register", async (req, resp, next) => {
       message: "Device existed."
     });
   }
-  
+
   const result = await Device.create({
     macAddress: req.body.macAddress,
     parlourName: req.body.parlourName,
@@ -33,8 +33,13 @@ router.get("/all", async (req, resp, next) => {
   });
 });
 
-router.get("/:id", async (req, resp, next) => {
-  const result = await Device.findById(req.params.id);
+router.get("/", async (req, resp, next) => {
+  let result = {};
+  if (req.query.id) {
+    result = await Device.findById(req.query.id);
+  } else if (req.query.mac) {
+    result = await Device.findOne({ where: { macAddress: req.query.mac } });
+  }
   return resp.send({
     success: true,
     device: result
