@@ -6,6 +6,7 @@ const app = express();
 require("./startup/logging.js")();
 const broker = require("./startup/broker")();
 const server = require("./startup/server")(app);
+require("./startup/routes")(app);
 
 broker.listen(+broker.get("mqtt_port"), () => {
   winston.debug(`mqtt started at ${broker.get("mqtt_port")}`);
