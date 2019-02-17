@@ -5,14 +5,15 @@ module.exports = (sequelize, Sequelize) => {
       primaryKey: true,
       autoIncrement: true
     },
-    chipId: Sequelize.STRING,
-    voltage: Sequelize.INTEGER,
-    temperature: Sequelize.INTEGER,
-    ambientTemp: Sequelize.INTEGER,
-    volume: Sequelize.INTEGER,
-    parlourName: Sequelize.STRING,
-    sectionName: Sequelize.STRING,
-    unitName: Sequelize.STRING,
-    tagNumber: Sequelize.STRING
+    chipId: { type: Sequelize.STRING },
+    voltage: { type: Sequelize.INTEGER },
+    temperature: { type: Sequelize.INTEGER },
+    ambientTemp: { type: Sequelize.INTEGER },
+    volume: { type: Sequelize.INTEGER },
+    parlourName: { type: Sequelize.STRING },
+    sectionName: { type: Sequelize.STRING },
+    unitName: { type: Sequelize.STRING },
+    tagNumber: { type: Sequelize.STRING },
+    date: { type: Sequelize.DATE, defaultValue: Sequelize.NOW }
   });
 };

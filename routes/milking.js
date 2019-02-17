@@ -1,4 +1,5 @@
 const Milking = require("../startup/db");
+const moment = require("moment");
 const express = require("express");
 const router = express.Router();
 
@@ -7,168 +8,150 @@ const router = express.Router();
 // daily average of Goats milk in (Day, Week, Month)
 // daily average of Goats milk in Last(Day, Week, Month)
 
+// milking cows
+// dry-off animals
+// current Month Milking
+// Total Milking
+
 // number of milked goats of the day
 // best and worst goat of the day
 
-// module.exports.getAllData = function() {
-//   const query = `SELECT rowId As id, * FROM Milk`;
-
-//   const db = sqlite.connect("dairy.db");
-//   db.each(query, function(err, row) {
-//     console.log(row);
-//   });
-
-//   db.close();
-// };
-
-router.get("/dairy-avg", async (req, resp) => {});
-// module.exports.avgMilk = function() {
-//   const innerQuery = `
-//         SELECT
-//             strftime('%W', time) as week,
-//             strftime('%j', time) as day,
-//             SUM(vol) AS dayVol
-//         FROM Milk
-//         Group By strftime('%j', time)`;
-
-//   const query = `
-//         SELECT
-//             sub.week AS week,
-//             AVG(sub.dayVol) AS weeklyVolAvg
-//         FROM(${innerQuery}) AS sub
-//         Group By sub.week`;
-
-//   const db = sqlite.connect("dairy.db");
-//   db.each(query, function(err, row) {
-//     console.log(row);
-//   });
-
-//   db.close();
-// };
-
-// returns daily average of total milk volume per day
+// returns daily average of total milk volume 
 router.get("/dairy-daily-avg", async (req, resp) => {
-  // gets date of day as query param && period
+  // gets date of a day as query param && period
+  const startDate = req.query.startDate;
+  const period = req.query.period;
+  const endDate = moment(startDate).add(period, "days");
+  await Milking.findAll(
+    { 
+      attributes: [
+        [ sequelize.fn('date_trunc', 'day', sequelize.col('created_at')), 'date' ],
+        [ sequelize.fn('AVG', models.sequelize.col('volume')), 'volume' ]
+      ],
+      where: { 'createdAt': { [Op.gte]: startDate, [Op.lte]: endDate } }, 
+      group: [ 'date' ]
+    }
+  );
+
   // returns volume avg of each day in that period
 });
-// module.exports.dairyDailySum = function() {
-//   const query = `
-//         SELECT
-//             strftime('%j', time) as day,
-//             SUM(vol) AS dayVol
-//         FROM Milk
-//         Group By strftime('%j', time)`;
 
-//   const db = sqlite.connect("dairy.db");
-//   db.each(query, function(err, row) {
-//     console.log(row);
-//   });
+// returns weekly average of total milk volume 
+router.get("/dairy-weekly-avg", async (req, resp) => {
+  // gets date of startingday && period in months
+  const startDate = req.query.startDate;
+  const period = req.query.period;
+  const endDate = moment(startDate).add(period, "weeks");
+  await Milking.findAll(
+    { 
+      attributes: [
+        [ sequelize.fn('date_trunc', 'week', sequelize.col('created_at')), 'date' ],
+        [ sequelize.fn('AVG', models.sequelize.col('volume')), 'volume' ]
+      ],
+      where: { 'createdAt': {[Op.gte]: startDate, [Op.lte]: endDate } }, 
+      group: [ 'date' ]
+    }
+  );
 
-//   db.close();
-// };
-
-// returns weekly average of total milk volume per day
-router.get("/dairy-daily-avg-of-week", async (req, resp) => {
-  // gets date of starting day as query param
-  // returns avg volume of each day of that week
-});
-// module.exports.dairyWeeklyAverage = function() {
-//   const innerQuery = `
-//         SELECT
-//             strftime('%W', time) as week,
-//             strftime('%j', time) as day,
-//             SUM(vol) AS dayVol
-//         FROM Milk
-//         Group By strftime('%j', time)`;
-
-//   const query = `
-//         SELECT
-//             sub.week AS week,
-//             AVG(sub.dayVol) AS weeklyVolAvg
-//         FROM(${innerQuery}) AS sub
-//         Group By sub.week`;
-
-//   const db = sqlite.connect("dairy.db");
-//   db.each(query, function(err, row) {
-//     console.log(row);
-//   });
-
-//   db.close();
-// };
-
-// returns daily average of total milk volume in a month
-router.get("/dairy-daily-avg-of-month", async (req, resp) => {
-  // gets date of starting day
-  // returns avg volume of each day of that month
-});
-// module.exports.dairyMonthlyAverage = function() {
-//   const innerQuery = `
-//         SELECT
-//             strftime('%m', time) as month,
-//             strftime('%j', time) as day,
-//             SUM(vol) AS dayVol
-//         FROM Milk
-//         Group By strftime('%j', time)`;
-
-//   const query = `
-//         SELECT
-//             sub.month AS month,
-//             AVG(sub.dayVol) AS monthlyVolAvg
-//         FROM(${innerQuery}) AS sub
-//         Group By sub.month`;
-
-//   const db = sqlite.connect("dairy.db");
-//   db.each(query, function(err, row) {
-//     console.log(row);
-//   });
-
-//   db.close();
-// };
-
-// returns monthly average of total milk volume per day
-router.get("/dairy-monthly-avg-of-year", async (req, resp) => {
-  // gets date of startingday of year
   // returns avg volume of each month of that year
 });
 
-router.get("/dairy-sum", async (req, resp) => {
-  // gets a date as starting day && a period
-  // returns total volume in the period
+// returns monthly average of total milk volume 
+router.get("/dairy-monthly-avg", async (req, resp) => {
+  // gets date of startingday && period in months
+  const startDate = req.query.startDate;
+  const period = req.query.period;
+  const endDate = moment(startDate).add(period, "months");
+  await Milking.findAll(
+    { 
+      attributes: [
+        [ sequelize.fn('date_trunc', 'month', sequelize.col('created_at')), 'date' ],
+        [ sequelize.fn('AVG', models.sequelize.col('volume')), 'volume' ]
+      ],
+      where: { 'createdAt': {[Op.gte]: startDate, [Op.lte]: endDate } }, 
+      group: [ 'date' ]
+    }
+  );
+
+  // returns avg volume of each month of that year
 });
-// module.exports.totalMilk = function() {
-//   const query = `
-//         SELECT
-//             SUM(vol) AS totalMilk
-//         FROM Milk
-//         WHERE time = (SELECT MAX(time) FROM Milk)`;
 
-//   const db = sqlite.connect("dairy.db");
-//   db.each(query, function(err, row) {
-//     console.log(row);
-//   });
+// returns daily average of total milk volume 
+router.get("/dairy-daily-sum", async (req, resp) => {
+  // gets date of a day as query param && period
+  const startDate = req.query.startDate;
+  const period = req.query.period;
+  const endDate = moment(startDate).add(period, "days");
+  await Milking.findAll(
+    { 
+      attributes: [
+        [ sequelize.fn('date_trunc', 'day', sequelize.col('created_at')), 'date' ],
+        [ sequelize.fn('SUM', models.sequelize.col('volume')), 'volume' ]
+      ],
+      where: { 'createdAt': { [Op.gte]: startDate, [Op.lte]: endDate } }, 
+      group: [ 'date' ]
+    }
+  );
 
-//   db.close();
-// };
+  // returns volume avg of each day in that period
+});
 
-// // milking cows
-// // dry-off animals
-// // current Month Milking
-// // Total Milking
+// returns weekly sum of total milk volume 
+router.get("/dairy-weekly-sum", async (req, resp) => {
+  // gets date of startingday && period in months
+  const startDate = req.query.startDate;
+  const period = req.query.period;
+  const endDate = moment(startDate).add(period, "weeks");
+  await Milking.findAll(
+    { 
+      attributes: [
+        [ sequelize.fn('date_trunc', 'week', sequelize.col('created_at')), 'date' ],
+        [ sequelize.fn('SUM', models.sequelize.col('volume')), 'volume' ]
+      ],
+      where: { 'createdAt': {[Op.gte]: startDate, [Op.lte]: endDate } }, 
+      group: [ 'date' ]
+    }
+  );
 
-router.get("/milkimg-livestocks", async (req, resp) => {});
-// module.exports.milkingGoats = function() {
-//   const query = `
-//         SELECT
-//             COUNT(DISTINCT(goat)) AS milkingGoats
-//         FROM Milk
-//         WHERE time = (SELECT MAX(time) FROM Milk)`;
+  // returns avg volume of each month of that year
+});
 
-//   const db = sqlite.connect("dairy.db");
-//   db.each(query, function(err, row) {
-//     console.log(row);
-//   });
+// returns monthly sum of total milk volume 
+router.get("/dairy-monthly-sum", async (req, resp) => {
+  // gets date of startingday && period in months
+  const startDate = req.query.startDate;
+  const period = req.query.period;
+  const endDate = moment(startDate).add(period, "months");
+  await Milking.findAll(
+    { 
+      attributes: [
+        [ sequelize.fn('date_trunc', 'month', sequelize.col('created_at')), 'date' ],
+        [ sequelize.fn('SUM', models.sequelize.col('volume')), 'volume' ]
+      ],
+      where: { 'createdAt': {[Op.gte]: startDate, [Op.lte]: endDate } }, 
+      group: [ 'date' ]
+    }
+  );
 
-//   db.close();
-// };
+  // returns avg volume of each month of that year
+});
+
+// returns number of milking livestocks in a day
+router.get("/milkimg-livestocks", async (req, resp) => {
+  // gets a date
+  const date = req.query.startDate;
+  await Milking.findAll(
+    { 
+      attributes: [
+        [ sequelize.fn('date_trunc', 'day', sequelize.col('created_at')), 'date' ],
+        [ sequelize.fn('COUNT', sequelize.col('tagNumber')), 'count' ]
+      ],
+      where: { 'date': { [Op.eq]: date } }, 
+      group: [ 'tagNumber' ]
+    }
+  );
+  // returns  number of milking livestocks in that date
+});
+
 
 module.exports = router;
