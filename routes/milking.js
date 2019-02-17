@@ -2,7 +2,6 @@ const Milking = require("../startup/db");
 const express = require("express");
 const router = express.Router();
 
-
 // daily average of dairy milk in (Day, Week, Month)
 // daily average of dairy milk in Last(Day, Week, Month)
 // daily average of Goats milk in (Day, Week, Month)
@@ -22,6 +21,7 @@ const router = express.Router();
 //   db.close();
 // };
 
+router.get("/dairy-avg", async (req, resp) => {});
 // module.exports.avgMilk = function() {
 //   const innerQuery = `
 //         SELECT
@@ -46,7 +46,11 @@ const router = express.Router();
 //   db.close();
 // };
 
-// // returns daily average of total milk volume per day
+// returns daily average of total milk volume per day
+router.get("/dairy-daily-avg", async (req, resp) => {
+  // gets date of day as query param && period
+  // returns volume avg of each day in that period
+});
 // module.exports.dairyDailySum = function() {
 //   const query = `
 //         SELECT
@@ -63,7 +67,11 @@ const router = express.Router();
 //   db.close();
 // };
 
-// // returns weekly average of total milk volume per day
+// returns weekly average of total milk volume per day
+router.get("/dairy-daily-avg-of-week", async (req, resp) => {
+  // gets date of starting day as query param
+  // returns avg volume of each day of that week
+});
 // module.exports.dairyWeeklyAverage = function() {
 //   const innerQuery = `
 //         SELECT
@@ -88,7 +96,11 @@ const router = express.Router();
 //   db.close();
 // };
 
-// // returns monthly average of total milk volume per day
+// returns daily average of total milk volume in a month
+router.get("/dairy-daily-avg-of-month", async (req, resp) => {
+  // gets date of starting day
+  // returns avg volume of each day of that month
+});
 // module.exports.dairyMonthlyAverage = function() {
 //   const innerQuery = `
 //         SELECT
@@ -113,6 +125,16 @@ const router = express.Router();
 //   db.close();
 // };
 
+// returns monthly average of total milk volume per day
+router.get("/dairy-monthly-avg-of-year", async (req, resp) => {
+  // gets date of startingday of year
+  // returns avg volume of each month of that year
+});
+
+router.get("/dairy-sum", async (req, resp) => {
+  // gets a date as starting day && a period
+  // returns total volume in the period
+});
 // module.exports.totalMilk = function() {
 //   const query = `
 //         SELECT
@@ -133,6 +155,7 @@ const router = express.Router();
 // // current Month Milking
 // // Total Milking
 
+router.get("/milkimg-livestocks", async (req, resp) => {});
 // module.exports.milkingGoats = function() {
 //   const query = `
 //         SELECT
