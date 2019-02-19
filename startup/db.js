@@ -11,6 +11,7 @@ const sequelize = new Sequelize(
     host: config.get("db_host"),
     dialect: "mysql",
     operatorsAliases: false,
+    logging: false,
 
     pool: {
       max: 5,
@@ -23,7 +24,7 @@ const sequelize = new Sequelize(
 
 const Device = DeviceModel(sequelize, Sequelize);
 const Milking = MilkingModel(sequelize, Sequelize);
-Milking.belongsTo(Device)
+Milking.belongsTo(Device);
 
 Device.sync({ force: true });
 Milking.sync({ force: true });

@@ -5,7 +5,6 @@ module.exports = async (req, resp, next) => {
   const parlourName = req.params.parlour;
   const sectionName = req.params.section;
   const unitName = req.params.unit;
-  const id = req.params.id;
   const topic = req.topic;
   let data = req.payload;
   data = JSON.parse(data);
@@ -15,7 +14,7 @@ module.exports = async (req, resp, next) => {
   const milk = { ...data, parlourName, sectionName, unitName };
   await Milking.create(milk);
 
-  winston.debug(`${topic}: ${unit}: ${id} ${JSON.stringify(milk)}`);
+  winston.debug(`${topic}: ${unitName} ${JSON.stringify(milk)}`);
 
   // ToDo: publish response on request
   //   resp.topic("$milking/response").publish("success");

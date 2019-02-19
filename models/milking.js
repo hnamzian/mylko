@@ -14,6 +14,6 @@ module.exports = (sequelize, Sequelize) => {
     sectionName: { type: Sequelize.STRING },
     unitName: { type: Sequelize.STRING },
     tagNumber: { type: Sequelize.STRING },
-    date: { type: Sequelize.DATE, defaultValue: Sequelize.NOW }
+    // date: { type: Sequelize.DATE, defaultValue: Sequelize.NOW }
   });
 };

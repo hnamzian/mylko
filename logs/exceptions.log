@@ -1,2 +1,798 @@
 {"timestamp":"2019-02-16T12:37:23.310Z", "level":"error", "message":"SequelizeAccessDeniedError: Access denied for user 'mylkoapp'@'localhost' (using password: YES)", "stack":""}
 {"timestamp":"2019-02-16T12:37:23.311Z", "level":"error", "message":"SequelizeAccessDeniedError: Access denied for user 'mylkoapp'@'localhost' (using password: YES)", "stack":""}
+{"timestamp":"2019-02-17T17:05:32.096Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:05:32.099Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:05:43.095Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:43.180Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:43.281Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:43.382Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:43.482Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:43.584Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:43.684Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:43.789Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:43.888Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:43.988Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:44.090Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:44.194Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:44.291Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:44.394Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:44.497Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:44.596Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:44.700Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:44.801Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:44.903Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:45.004Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:45.104Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:45.205Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:45.307Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:45.408Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:45.510Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:45.611Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:45.714Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:45.815Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:45.918Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:46.019Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:46.120Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:46.222Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:46.323Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:46.425Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:46.525Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:46.625Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:46.725Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:46.827Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:46.928Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:47.029Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:47.131Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:47.236Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:47.333Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:47.434Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:47.534Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:47.637Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:47.736Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:47.839Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:47.942Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:48.041Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:48.142Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:48.244Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:48.345Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:48.445Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:48.548Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:48.650Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:48.750Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:48.850Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:48.951Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:49.052Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:49.153Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:49.254Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:49.354Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:49.455Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:49.556Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:49.659Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:49.759Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:49.860Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:49.963Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:50.063Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:50.163Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:50.267Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:50.366Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:50.468Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:50.568Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:50.670Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:50.773Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:50.873Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:50.974Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:51.074Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:51.176Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:05:51.279Z", "level":"error", "message":"SequelizeDatabaseError: Unknown column 'date' in 'field list'", "stack":""}
+{"timestamp":"2019-02-17T17:06:29.678Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.789Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.791Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.798Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.799Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.802Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.809Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.814Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.817Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.818Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.819Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.820Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.825Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.828Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.829Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.829Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.831Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.838Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.840Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.840Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.848Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.849Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.850Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.852Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.853Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.857Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.858Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.859Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.868Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.876Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.879Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.881Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.882Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.883Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.886Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.887Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.895Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.899Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.900Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.901Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.902Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.906Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.911Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.913Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.914Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.918Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.920Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.921Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.924Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.927Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.928Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.930Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.932Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.934Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.938Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.940Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.941Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.950Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.951Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.959Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.960Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.961Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.963Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.967Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.971Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.972Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.972Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.975Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.980Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.984Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.986Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.987Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.988Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.990Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:30.994Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.000Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.001Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.003Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.005Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.008Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.010Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.013Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.016Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.019Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.020Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.021Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.024Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.028Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.028Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.036Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.036Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.038Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.041Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.042Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.045Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.049Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.049Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.059Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.062Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.063Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.063Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.066Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.068Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.069Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.079Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.082Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.083Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.084Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.085Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.087Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.091Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.096Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.097Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.098Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.101Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.102Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.109Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.115Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.116Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.132Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.132Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.133Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.135Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.141Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.158Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.169Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.169Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.172Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.173Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.175Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.177Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.178Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.179Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.182Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.185Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.192Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.194Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.197Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.198Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.204Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.205Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.206Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.206Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.208Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.215Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.220Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.223Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.224Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.226Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.227Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.230Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.237Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.241Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.243Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.243Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.244Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.246Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.249Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.258Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.258Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.261Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.263Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.264Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.268Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.272Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.272Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.273Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.274Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.275Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.280Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.281Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.285Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.286Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.291Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.297Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.299Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.303Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.303Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.304Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.306Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.309Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.316Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.317Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.320Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.320Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.324Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.328Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.331Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.334Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.334Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.335Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.342Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.345Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.347Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.350Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.350Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.354Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.356Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.357Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.362Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.363Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.366Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.367Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.372Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.376Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.377Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.380Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.383Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.384Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.393Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.396Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.396Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.397Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.397Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.403Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.411Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.412Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.414Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.416Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.419Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.423Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.424Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.429Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.432Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.435Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.439Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.440Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.442Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.445Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.448Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.449Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.449Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.450Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.451Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.456Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.460Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.461Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.462Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.462Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.464Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.472Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.476Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.480Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.480Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.481Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.488Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.489Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.490Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.490Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.491Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.491Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.497Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.503Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.503Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.507Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.509Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.513Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.515Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.516Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.517Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.518Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.521Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.525Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.526Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.526Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.530Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.531Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.535Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.536Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.536Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.537Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.538Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.541Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.543Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.543Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.544Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.550Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.553Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.554Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.554Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.555Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.565Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.567Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.567Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.568Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.568Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.569Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.571Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.580Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.582Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.583Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.583Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.584Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.592Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.593Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.594Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.594Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.595Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.598Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.598Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.606Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.609Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.610Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.611Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.613Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.614Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.619Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.621Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.622Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.633Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.633Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.634Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.634Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.635Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.640Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.643Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.644Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.645Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.645Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.648Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.653Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.654Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.662Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.663Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.663Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.667Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.668Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.672Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.673Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.673Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.676Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.677Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.677Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.683Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.683Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.686Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.687Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.688Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.693Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.697Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.697Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.698Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.698Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.702Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.705Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.708Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.709Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.709Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.713Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.720Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.721Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.722Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.722Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.726Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.729Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.730Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.731Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.732Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.732Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.737Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.738Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.738Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.740Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.747Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.758Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.758Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.759Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.759Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.760Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.762Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.768Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.769Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.770Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.771Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.778Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.788Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.792Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.793Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.793Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.795Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.796Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.796Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.798Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.803Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.806Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.807Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.807Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.810Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.812Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.813Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.823Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.824Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.824Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.826Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.826Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.829Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.834Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.836Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.836Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.838Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.839Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.848Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.850Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.851Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.851Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.852Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.856Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.857Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.861Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.861Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.862Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.863Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.864Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.870Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.871Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.872Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.916Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:31.924Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.023Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.029Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.159Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.161Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.224Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.231Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.325Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.330Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.429Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.435Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.531Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.536Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.631Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.634Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.733Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.738Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.835Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.840Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.935Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:32.940Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.038Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.044Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.133Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.142Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.242Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.246Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.345Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.351Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.444Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.448Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.542Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.550Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.645Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.655Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.747Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.756Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.848Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.860Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.947Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:33.958Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:34.051Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:34.063Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:42.820Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:43.825Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:44.826Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:45.821Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:46.829Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:47.831Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:48.830Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:49.835Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:50.833Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:51.836Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:52.837Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:53.838Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:54.842Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:55.841Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:56.842Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:57.844Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:58.846Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:06:59.848Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:07:54.818Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T17:07:55.819Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T17:07:56.819Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T17:07:57.820Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T17:08:01.236Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:01.238Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:01.240Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:01.834Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:02.219Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:02.833Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:03.219Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:03.833Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:04.225Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:04.837Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:05.225Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:05.836Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:06.219Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:06.839Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:07.230Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:07.839Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:08.231Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:08.842Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:09.231Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:08:09.843Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:23.615Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:09:28.377Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:29.371Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:30.377Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:31.378Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:32.384Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:33.383Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:34.382Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:35.382Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:36.389Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:37.391Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:38.386Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:09:39.389Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:11:02.323Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:11:02.324Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:11:06.335Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:11:07.328Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:11:08.328Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:11:09.331Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:11:10.330Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:11:11.355Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:11:12.338Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:11:13.335Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:11:14.335Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:11:23.211Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:11:45.710Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:12:28.532Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:12:28.535Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:12:28.541Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:28.543Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:28.543Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:28.544Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:28.545Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:28.551Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:28.764Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:29.286Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:29.429Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:29.507Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:29.770Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:30.295Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:30.438Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:30.509Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:30.765Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:31.294Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:31.437Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:31.513Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:31.772Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:32.298Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:32.438Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:32.511Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:32.774Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:33.297Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:33.433Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:33.511Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:33.776Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:34.297Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:34.441Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:34.515Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:34.770Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:35.299Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:35.442Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:35.515Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:35.778Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:36.299Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:36.443Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:36.519Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:36.782Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:37.305Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:37.444Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:37.537Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:37.784Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:38.304Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:38.444Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:38.518Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:38.783Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:39.304Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:39.446Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:39.523Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:39.785Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:40.308Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:40.447Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:40.521Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:40.785Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:41.309Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:41.442Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:41.515Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:41.789Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:42.312Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:42.450Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:42.524Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:42.784Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:43.311Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:43.451Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:43.527Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:43.792Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:44.305Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:44.451Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:44.527Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:44.796Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:45.315Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:45.454Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:45.530Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:45.788Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:46.315Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:46.454Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:46.530Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:46.794Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:47.317Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:47.455Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:47.530Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:47.799Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:48.319Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:48.452Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:48.531Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:48.797Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:49.322Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:49.460Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:49.533Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:49.798Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:50.320Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:50.456Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:50.535Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:50.803Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:51.321Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:51.461Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:51.536Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:51.803Z", "level":"error", "message":"ReferenceError: unit is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:12:54.043Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:14:19.891Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:16:27.348Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:17:23.396Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:17:23.399Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:21:15.142Z", "level":"error", "message":"ReferenceError: sequelize is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:21:55.642Z", "level":"error", "message":"ReferenceError: sequelize is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:22:45.288Z", "level":"error", "message":"ReferenceError: sequelize is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:23:03.324Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:23:07.225Z", "level":"error", "message":"ReferenceError: sequelize is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:23:35.620Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:23:49.038Z", "level":"error", "message":"ReferenceError: models is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:24:12.706Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:24:14.011Z", "level":"error", "message":"ReferenceError: Op is not defined", "stack":""}
+{"timestamp":"2019-02-17T17:24:53.328Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:24:53.330Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:25:00.332Z", "level":"error", "message":"SequelizeDatabaseError: FUNCTION mylko.date_trunc does not exist", "stack":""}
+{"timestamp":"2019-02-17T17:30:37.637Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T17:31:30.876Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:34:17.788Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T17:34:29.451Z", "level":"error", "message":"SequelizeDatabaseError: FUNCTION mylko.date_trunc does not exist", "stack":""}
+{"timestamp":"2019-02-17T18:49:03.138Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T18:49:05.851Z", "level":"error", "message":"SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''day', `createdAt`) AS `date`, AVG(`volume`) AS `volume` FROM `Milkings` AS `Mil' at line 1", "stack":""}
+{"timestamp":"2019-02-17T18:49:45.214Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T18:49:50.528Z", "level":"error", "message":"SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''day', `createdAt`) AS `day`, AVG(`volume`) AS `volume` FROM `Milkings` AS `Milk' at line 1", "stack":""}
+{"timestamp":"2019-02-17T18:52:51.539Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T18:53:58.980Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T18:54:22.116Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T18:54:24.888Z", "level":"error", "message":"SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''DAY', `createdAt`) AS `day`, AVG(`volume`) AS `volume` FROM `Milkings` AS `Milk' at line 1", "stack":""}
+{"timestamp":"2019-02-17T18:56:23.026Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T18:56:23.027Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T18:58:25.738Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T18:58:25.740Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T19:00:09.184Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T19:00:54.305Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:00:54.307Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T19:01:49.665Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:01:49.666Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T19:04:29.652Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:04:29.654Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T19:06:01.713Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:06:01.715Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T19:07:40.946Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:07:40.947Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T19:08:07.317Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T19:09:07.941Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:12:49.587Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:15:34.874Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:16:59.628Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:17:07.645Z", "level":"error", "message":"Error: ["volume"] is not a valid attribute definition. Please use the following format: ['attribute definition', 'alias']", "stack":""}
+{"timestamp":"2019-02-17T19:17:20.421Z", "level":"error", "message":"Error: ["volume"] is not a valid attribute definition. Please use the following format: ['attribute definition', 'alias']", "stack":""}
+{"timestamp":"2019-02-17T19:17:38.247Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:17:38.248Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T19:17:45.452Z", "level":"error", "message":"Error: ["AVG"] is not a valid attribute definition. Please use the following format: ['attribute definition', 'alias']", "stack":""}
+{"timestamp":"2019-02-17T19:18:17.246Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}
+{"timestamp":"2019-02-17T19:18:25.364Z", "level":"error", "message":"Error: ["AVG_VOL"] is not a valid attribute definition. Please use the following format: ['attribute definition', 'alias']", "stack":""}
+{"timestamp":"2019-02-17T19:19:09.611Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:21:06.974Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:21:07.059Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:21:07.061Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:21:07.062Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:21:07.065Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:21:07.066Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:21:07.068Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:21:07.069Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:21:07.070Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:21:09.335Z", "level":"error", "message":"Error: ["createdAt"] is not a valid attribute definition. Please use the following format: ['attribute definition', 'alias']", "stack":""}
+{"timestamp":"2019-02-17T19:22:40.259Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:23:34.521Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:23:34.574Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:23:34.575Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:23:34.575Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:23:34.577Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:23:34.578Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:23:34.578Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:23:34.590Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:23:34.591Z", "level":"error", "message":"SequelizeDatabaseError: Table 'mylko.milkings' doesn't exist", "stack":""}
+{"timestamp":"2019-02-17T19:23:37.932Z", "level":"error", "message":"SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`year`, MONTH(`createdAt`)`month`, DAY(`createdAt`)`day`' at line 1", "stack":""}
+{"timestamp":"2019-02-17T19:23:52.552Z", "level":"error", "message":"SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`year`, MONTH(`createdAt`)`month`, DAY(`createdAt`)`day`' at line 1", "stack":""}
+{"timestamp":"2019-02-17T19:24:10.936Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:24:17.459Z", "level":"error", "message":"SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`year`, MONTH(`createdAt`)`month`, DAY(`createdAt`)`day`' at line 1", "stack":""}
+{"timestamp":"2019-02-17T19:25:19.575Z", "level":"error", "message":"SequelizeDatabaseError: Deadlock found when trying to get lock; try restarting transaction", "stack":""}
+{"timestamp":"2019-02-17T19:25:19.577Z", "level":"error", "message":"SequelizeDatabaseError: Cannot drop table 'devices' referenced by a foreign key constraint 'milkings_ibfk_1' on table 'milkings'.", "stack":""}

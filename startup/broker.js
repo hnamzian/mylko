@@ -5,6 +5,6 @@ const broker = mors();
 
 module.exports = function() {
   broker.set("mqtt_port", config.get("mqtt_port") || 1881);
-  broker.use("milking/:parlour?/:section?/:unit?/:id?", milking);
+  broker.use("milking/:parlour?/:section?/:unit?", milking);
   return broker;
 };
