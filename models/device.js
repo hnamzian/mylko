@@ -5,13 +5,26 @@ module.exports = (sequelize, Sequelize) => {
       primaryKey: true,
       autoIncrement: true
     },
-    macAddress: Sequelize.STRING,
-    parlourName: Sequelize.STRING,
-    sectionName: Sequelize.STRING,
-    unitName: Sequelize.STRING,
+    macAddress: {
+      type: Sequelize.STRING,
+      allowNull: false
+    },
+    parlourName: {
+      type: Sequelize.STRING,
+      allowNull: false
+    },
+    sectionName: {
+      type: Sequelize.STRING,
+      allowNull: false
+    },
+    unitName: {
+      type: Sequelize.STRING,
+      allowNull: false
+    },
     type: {
       type: Sequelize.ENUM,
-      values: ["MILKING"]
+      values: ["MILKING"],
+      allowNull: false
     }
   });
 };
