@@ -2,6 +2,9 @@ const config = require("config");
 const Sequelize = require("sequelize");
 const AnimalsModel = require("../models/animals");
 const BreedingModel = require("../models/breeding");
+const AdminModel = require("../models/admin");
+const EmployeesModel = require("../models/employees");
+const DairyModel = require("../models/dairy");
 const DeviceModel = require("../models/device");
 const DiseaseModel = require("../models/disease");
 const FoodModel = require("../models/food");
@@ -33,6 +36,15 @@ Milking.belongsTo(Device);
 const Animals = AnimalsModel(sequelize, Sequelize);
 const Breeding = BreedingModel(sequelize, Sequelize);
 Breeding.belongsTo(Animals);
+
+const Admin = AdminModel(sequelize, Sequelize);
+
+const Dairy = DairyModel(sequelize, Sequelize);
+Dairy.belongsTo(Admin);
+Admin.belongsTo(Dairy);
+
+const Employees = EmployeesModel(sequelize, Sequelize);
+Employees.belongsTo(Dairy);
 
 const Disease = DiseaseModel(sequelize, Sequelize);
 Disease.belongsTo(Animals);
@@ -80,9 +92,12 @@ module.exports = {
   sequelize,
   Milking,
   Device,
+  Admin,
   Animals,
   Breeding,
+  Dairy,
   Disease,
+  Employees,
   Food,
   Mating,
   Vaccins,
