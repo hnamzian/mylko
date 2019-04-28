@@ -15,7 +15,7 @@ module.exports = (sequelize, Sequelize) => {
     },
     mobile: {
       type: Sequelize.STRING,
-      allowNull: true
+      allowNull: false
     },
     email: {
       type: Sequelize.STRING,
