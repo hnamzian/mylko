@@ -4,5 +4,6 @@
   "db_password": "123",
   "db_host": "localhost",
   "mqtt_port": 1881,
-  "server_port": "3000"
+  "server_port": "3000",
+  "jwtPrivateKey": ""
 }
