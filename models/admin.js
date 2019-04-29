@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-  return sequelize.define("User", {
+  return sequelize.define("Admin", {
     id: {
       type: Sequelize.INTEGER,
       primaryKey: true,
@@ -15,10 +15,12 @@ module.exports = (sequelize, Sequelize) => {
     },
     mobile: {
       type: Sequelize.STRING,
+      unique: true,
       allowNull: false
     },
     email: {
       type: Sequelize.STRING,
+      unique: true,
       allowNull: true
     },
     address: {
@@ -26,8 +28,7 @@ module.exports = (sequelize, Sequelize) => {
       allowNull: true
     },
     password: {
-      type: Sequelize.ENUM,
-      values: ["ADMIN", "EMPLOYEE"],
+      type: Sequelize.STRING,
       allowNull: false
     }
   });
