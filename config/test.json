@@ -5,6 +5,7 @@
   "db_host": "localhost",
   "mqtt_port": "1881",
   "server_port": "3000",
+  "jwtPrivateKey": "",
 
   "ChipId": "80:7D:3A:45:59:00",
   "voltage": 33,
