@@ -41,7 +41,7 @@ const Admin = AdminModel(sequelize, Sequelize);
 
 const Dairy = DairyModel(sequelize, Sequelize);
 Dairy.belongsTo(Admin);
-Admin.belongsTo(Dairy);
+// Admin.belongsTo(Dairy);
 
 const Employees = EmployeesModel(sequelize, Sequelize);
 Employees.belongsTo(Dairy);
@@ -69,6 +69,9 @@ Wool.belongsTo(Animals);
 
 Device.sync();
 Milking.sync();
+Admin.sync();
+Employees.sync();
+Dairy.sync();
 Animals.sync();
 Breeding.sync();
 Disease.sync();
