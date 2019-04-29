@@ -4,5 +4,6 @@
   "db_password": "db_password",
   "db_host": "db_host",
   "mqtt_port": "mqtt_port",
-  "server_port": "server_port"
+  "server_port": "server_port",
+  "jwtPrivateKey": "mylko_jwt"
 }
