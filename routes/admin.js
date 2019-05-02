@@ -11,6 +11,9 @@ router = express.Router();
 router.post("/register", async (req, resp) => {
   const admin = _.pick(req.body, ["firstName", "lastName", "mobile", "email", "address", "password"]);
 
+  const { error } = validate(admin);
+  if (error) return resp.status(400).send("Joi: " + error.details[0].message);
+  
   const salt = await bcrypt.genSalt(10);
   const hashed = await bcrypt.hash(admin.password, salt);
   admin.password = hashed;
