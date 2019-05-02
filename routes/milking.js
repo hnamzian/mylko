@@ -5,19 +5,6 @@ const moment = require("moment");
 const express = require("express");
 const router = express.Router();
 
-// daily average of dairy milk in (Day, Week, Month)
-// daily average of dairy milk in Last(Day, Week, Month)
-// daily average of Goats milk in (Day, Week, Month)
-// daily average of Goats milk in Last(Day, Week, Month)
-
-// milking cows
-// dry-off animals
-// current Month Milking
-// Total Milking
-
-// number of milked goats of the day
-// best and worst goat of the day
-
 // returns daily average of total milk volume
 router.get("/dairy-daily-avg", async (req, resp) => {
   // gets date of a day as query param && period
