@@ -23,7 +23,6 @@ router.post("/register", async (req, resp) => {
     const token = jwt.sign({ _id: result.dataValues.id, isAdmin: this.isAdmin }, config.jwtPrivateKey);
     resp.send(token);
   } catch (ex) {
-    winston.debug(ex.errors[0].message);
     throw ex.errors[0].message;
   }
 });
