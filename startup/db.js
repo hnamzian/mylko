@@ -43,7 +43,7 @@ const Dairy = DairyModel(sequelize, Sequelize);
 Dairy.belongsTo(Admin);
 
 const Employees = EmployeesModel(sequelize, Sequelize);
-Employees.belongsTo(Dairy);
+Employees.belongsTo(Dairy, { foreignKey: { allowNull: false } });
 
 const Disease = DiseaseModel(sequelize, Sequelize);
 Disease.belongsTo(Animals);
