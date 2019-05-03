@@ -11,9 +11,10 @@ router.get("/", [auth], async (req, resp) => {
 
   try {
     const result = await Admin.findAll({ where: { id: { [Op.eq]: userId } } });
-    resp.send(result);
+    const user = _.omit(result[0].dataValues, ["password"]);
+    resp.send({ success: true, user });
   } catch (ex) {
-    throw ex.errors[0].message;
+    throw ex;
   }
 });
 
