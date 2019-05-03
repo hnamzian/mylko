@@ -40,7 +40,7 @@ Breeding.belongsTo(Animals);
 const Admin = AdminModel(sequelize, Sequelize);
 
 const Dairy = DairyModel(sequelize, Sequelize);
-Dairy.belongsTo(Admin);
+Dairy.belongsTo(Admin, { foreignKey: { allowNull: false } });
 
 const Employees = EmployeesModel(sequelize, Sequelize);
 Employees.belongsTo(Dairy, { foreignKey: { allowNull: false } });
