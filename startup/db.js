@@ -41,7 +41,6 @@ const Admin = AdminModel(sequelize, Sequelize);
 
 const Dairy = DairyModel(sequelize, Sequelize);
 Dairy.belongsTo(Admin);
-// Admin.belongsTo(Dairy);
 
 const Employees = EmployeesModel(sequelize, Sequelize);
 Employees.belongsTo(Dairy);
