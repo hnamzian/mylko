@@ -7,7 +7,10 @@ router = express.Router();
 
 router.post("/add", async (req, resp) => {
   const dairy = _.pick(req.body, ["name", "address", "AdminId"]);
-  
+
+  const { error } = validate(dairy);
+  if (error) return resp.status(400).send("Joi: " + error.details[0].message);
+
   try {
     const result = await Dairy.create(dairy);
     resp.send(result);
@@ -15,5 +18,17 @@ router.post("/add", async (req, resp) => {
     throw ex.errors[0].message;
   }
 });
+
+function validate(dairy) {
+  const schema = {
+    name: Joi.string()
+      .min(2)
+      .required(),
+    address: Joi.string().min(0),
+    AdminId: Joi.number()
+  };
+
+  return Joi.validate(dairy, schema);
+}
 
 module.exports = router;
