@@ -3,14 +3,16 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 const Sequelize = require("sequelize");
 const Op = Sequelize.Op;
+const SMSTokenMW = require("../middleware/SMSToken");
 const express = require("express");
 const router = express.Router();
 
 router.get("/", async (req, resp) => {
   const mobile = req.body.mobile;
-  
-  const { smsCode, expiredAt } = await _getSMSCode(mobile)
 
+  const { smsCode, expiredAt } = await _getSMSCode(mobile);
+
+  console.log(smsCode, expiredAt)
   const smsToken = jwt.sign(
     {
       mobile,
@@ -33,7 +35,7 @@ async function _getSMSCode(mobile) {
   let lastToken = await SMSToken.findAll({
     where: {
       mobile: { [Op.eq]: mobile },
-      expiredAt: { [Op.lte]: Date.now() }
+      expiredAt: { [Op.gte]: Date.now() / 1000 }
     }
   });
 
@@ -43,10 +45,10 @@ async function _getSMSCode(mobile) {
     await SMSToken.create({ mobile, code: smsCode, expiredAt });
   } else {
     smsCode = lastToken[0].dataValues.code;
-    expiredAt = Date.now();
+    expiredAt = lastToken[0].dataValues.expiredAt;
   }
 
-  return { smsCode, expiredAt }
+  return { smsCode, expiredAt };
 }
 
 function _getRandomInt(length) {
