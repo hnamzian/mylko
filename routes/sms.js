@@ -38,7 +38,7 @@ async function _getSMSCode(mobile) {
   });
 
   if (lastToken.length == 0) {
-    smsCode = getRandomInt(5);
+    smsCode = _getRandomInt(5);
     expiredAt = Math.floor(Date.now() / 1000) + 10 * 60;
     await SMSToken.create({ mobile, code: smsCode, expiredAt });
   } else {
@@ -49,7 +49,7 @@ async function _getSMSCode(mobile) {
   return { smsCode, expiredAt }
 }
 
-function getRandomInt(length) {
+function _getRandomInt(length) {
   const min = 10 ** (length - 1);
   const max = 10 ** length - 1;
   return Math.floor(Math.random() * (max - min) + min);
