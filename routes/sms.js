@@ -12,7 +12,7 @@ router.get("/", async (req, resp) => {
 
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
 
-  console.log(smsCode, expiredAt)
+  console.log(smsCode, expiredAt);
   const smsToken = jwt.sign(
     {
       mobile,
@@ -26,6 +26,18 @@ router.get("/", async (req, resp) => {
     smsCode,
     smsToken
   });
+});
+
+router.get("/verify", [SMSTokenMW], async (req, resp) => {
+  const result = await SMSToken.findAll({
+    where: {
+      mobile: { [Op.eq]: req.mobile },
+      expiredAt: { [Op.gte]: req.expiredAt }
+    }
+  });
+
+  if (result[0].dataValues.code == req.body.smsCode) return resp.send({ success: true });
+  return resp.send({ success: false, message: "Invalid SMS Code" });
 });
 
 async function _getSMSCode(mobile) {
