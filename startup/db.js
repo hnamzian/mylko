@@ -14,6 +14,7 @@ const VaccinsModel = require("../models/vaccins");
 const WaterModel = require("../models/water");
 const WeightModel = require("../models/weight");
 const WoolModel = require("../models/wool");
+const SMSTokenModel = require("../models/SMSToken");
 
 const sequelize = new Sequelize(config.get("db_database"), config.get("db_user"), config.get("db_password"), {
   host: config.get("db_host"),
@@ -66,6 +67,8 @@ Weight.belongsTo(Animals);
 const Wool = WoolModel(sequelize, Sequelize);
 Wool.belongsTo(Animals);
 
+const SMSToken = SMSTokenModel(sequelize, Sequelize);
+
 Device.sync();
 Milking.sync();
 Admin.sync();
@@ -80,6 +83,7 @@ Vaccins.sync();
 Water.sync();
 Weight.sync();
 Wool.sync();
+SMSToken.sync();
 
 // sequelize
 //   .authenticate()
@@ -105,5 +109,6 @@ module.exports = {
   Vaccins,
   Water,
   Weight,
-  Wool
+  Wool,
+  SMSToken
 };
