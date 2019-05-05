@@ -14,7 +14,7 @@ module.exports = (sequelize, Sequelize) => {
       allowNull: false
     },
     expiredAt: {
-      type: Sequelize.DATE,
+      type: Sequelize.INTEGER,
       allowNull: false
     }
   });
