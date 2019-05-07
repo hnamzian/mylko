@@ -8,7 +8,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", async (req, resp) => {
-  const mobile = req.body.mobile;
+  const mobile = req.query.mobile;
 
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
 
