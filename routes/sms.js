@@ -12,7 +12,6 @@ router.get("/", async (req, resp) => {
 
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
 
-  console.log(smsCode, expiredAt);
   const smsToken = jwt.sign(
     {
       mobile,
@@ -52,7 +51,7 @@ async function _getSMSCode(mobile) {
   });
 
   if (lastToken.length == 0) {
-    smsCode = _getRandomInt(5);
+    smsCode = _getRandomInt(6);
     expiredAt = Math.floor(Date.now() / 1000) + 10 * 60;
     await SMSToken.create({ mobile, code: smsCode, expiredAt });
   } else {
