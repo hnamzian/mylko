@@ -1,3 +1,4 @@
+const cors = require("cors");
 const express = require("express");
 require("express-async-errors");
 const deviceRouter = require("../routes/device");
@@ -10,6 +11,7 @@ const smsTokenRouter = require("../routes/sms");
 const error = require("../middleware/error");
 
 module.exports = function(app) {
+  app.use(cors());
   app.use(express.json());
   app.use("/device", deviceRouter);
   app.use("/milking", milkingRouter);
