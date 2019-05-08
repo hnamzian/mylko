@@ -27,7 +27,7 @@ router.post("/", async (req, resp) => {
   });
 });
 
-router.get("/verify", [SMSTokenMW], async (req, resp) => {
+router.post("/verify", [SMSTokenMW], async (req, resp) => {
   const result = await SMSToken.findAll({
     where: {
       mobile: { [Op.eq]: req.mobile },
