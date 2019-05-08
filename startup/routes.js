@@ -7,7 +7,6 @@ const adminRouter = require("../routes/admin");
 const dairyRouter = require("../routes/dairy");
 const employeesRouter = require("../routes/employees");
 const authRouter = require("../routes/auth");
-const smsTokenRouter = require("../routes/sms");
 const error = require("../middleware/error");
 
 module.exports = function(app) {
@@ -19,6 +18,5 @@ module.exports = function(app) {
   app.use("/dairy", dairyRouter);
   app.use("/employees", employeesRouter);
   app.use("/auth", authRouter);
-  app.use("/sms", smsTokenRouter);
   app.use(error);
 };
