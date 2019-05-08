@@ -38,8 +38,12 @@ router.post("/verify-sms-code", [SMSTokenMW], async (req, resp) => {
   if (result[0].dataValues.code == req.body.smsCode) {
     const admin = { mobile: req.mobile };
     const result = await Admin.findOrCreate({ where: admin });
-    console.log(result);
-    return resp.send({ success: true });
+    console.log(result[0].dataValues);
+    return resp.send({
+      success: true,
+      message: "user found successfuly",
+      user: result[0].dataValues
+    });
   }
   return resp.send({ success: false, message: "Invalid SMS Code" });
 });
