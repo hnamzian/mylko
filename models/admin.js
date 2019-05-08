@@ -7,11 +7,11 @@ module.exports = (sequelize, Sequelize) => {
     },
     firstName: {
       type: Sequelize.STRING,
-      allowNull: false
+      // allowNull: false
     },
     lastName: {
       type: Sequelize.STRING,
-      allowNull: false
+      // allowNull: false
     },
     mobile: {
       type: Sequelize.STRING,
