@@ -4,6 +4,7 @@ const config = require("config");
 const Sequelize = require("sequelize");
 const Op = Sequelize.Op;
 const SMSTokenMW = require("../middleware/SMSToken");
+const AuthMW = require("../middleware/auth");
 const express = require("express");
 const router = express.Router();
 
@@ -38,11 +39,13 @@ router.post("/verify-sms-code", [SMSTokenMW], async (req, resp) => {
   if (result[0].dataValues.code == req.body.smsCode) {
     const admin = { mobile: req.mobile };
     const result = await Admin.findOrCreate({ where: admin });
-    console.log(result[0].dataValues);
+    const user = result[0].dataValues;
+    const authToken = jwt.sign({ id: user.id }, config.get("jwtPrivateKey"));
     return resp.send({
       success: true,
       message: "user found successfuly",
-      user: result[0].dataValues
+      user,
+      token: authToken
     });
   }
   return resp.send({ success: false, message: "Invalid SMS Code" });
