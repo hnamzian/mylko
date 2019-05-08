@@ -37,7 +37,8 @@ router.post("/verify-sms-code", [SMSTokenMW], async (req, resp) => {
   });
 
   if (result[0].dataValues.code == req.body.smsCode) {
-    const admin = { mobile: req.mobile };
+    let mobile = _parseMobile(req.mobile);
+    const admin = { mobile: mobile };
     const result = await Admin.findOrCreate({ where: admin });
     const user = result[0].dataValues;
     const authToken = jwt.sign({ id: user.id }, config.get("jwtPrivateKey"));
