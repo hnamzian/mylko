@@ -95,4 +95,10 @@ function _getRandomInt(length) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
+function _parseMobile(mobile) {
+  if (!mobile.startsWith("0") && !mobile.startsWith("+98")) return false;
+
+  return mobile.startsWith("0") ? mobile.replaceAt(0, "+98") : mobile;
+}
+
 module.exports = router;
