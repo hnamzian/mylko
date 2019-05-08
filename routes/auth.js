@@ -1,4 +1,4 @@
-const { SMSToken } = require("../startup/db");
+const { SMSToken, Admin } = require("../startup/db");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const Sequelize = require("sequelize");
@@ -35,7 +35,12 @@ router.post("/verify-sms-code", [SMSTokenMW], async (req, resp) => {
     }
   });
 
-  if (result[0].dataValues.code == req.body.smsCode) return resp.send({ success: true });
+  if (result[0].dataValues.code == req.body.smsCode) {
+    const admin = { mobile: req.mobile };
+    const result = await Admin.findOrCreate({ where: admin });
+    console.log(result);
+    return resp.send({ success: true });
+  }
   return resp.send({ success: false, message: "Invalid SMS Code" });
 });
 
