@@ -18,7 +18,7 @@ router.post("/register", [SMSTokenMW], async (req, resp) => {
 
   try {
     const result = await Admin.create(admin);
-    const token = jwt.sign({ _id: result.dataValues.id, isAdmin: this.isAdmin }, config.jwtPrivateKey);
+    const token = _generateAuthToken(result.dataValues.id);
     resp.send(token);
   } catch (ex) {
     throw ex.errors[0].message;
