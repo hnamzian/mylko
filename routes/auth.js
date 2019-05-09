@@ -1,4 +1,5 @@
 const { SMSToken, Admin } = require("../startup/db");
+const generateAuthToken = require("../utilities/generateAuthToken");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const Sequelize = require("sequelize");
@@ -41,7 +42,7 @@ router.post("/verify-sms-code", [SMSTokenMW], async (req, resp) => {
     const admin = { mobile: mobile };
     const result = await Admin.findOrCreate({ where: admin });
     const user = result[0].dataValues;
-    const authToken = jwt.sign({ id: user.id }, config.get("jwtPrivateKey"));
+    const authToken = generateAuthToken(user.id);
     return resp.send({
       success: true,
       message: "user found successfuly",
