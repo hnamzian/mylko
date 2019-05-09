@@ -43,4 +43,8 @@ function validate(admin) {
   return Joi.validate(admin, schema);
 }
 
+function _generateAuthToken(adminId) {
+  return jwt.sign({ _id: adminId, isAdmin: this.isAdmin }, config.jwtPrivateKey);
+}
+
 module.exports = router;
