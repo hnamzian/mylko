@@ -1,12 +1,9 @@
 const { Admin } = require("../startup/db");
 const SMSTokenMW = require("../middleware/SMSToken");
 const AuthTokenMW = require("../middleware/auth");
-const config = require("config");
+const generateAuthToken = require("../utilities/generateAuthToken");
 const Joi = require("joi");
-const winston = require("winston");
 const _ = require("lodash");
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
 const express = require("express");
 router = express.Router();
 
@@ -47,7 +44,7 @@ router.put("/update", [AuthTokenMW], async (req, resp) => {
     if (affectedRows) {
       let userData = await Admin.findOne({ where: { id: req.userId, mobile: admin.mobile } });
       let user = userData.dataValues;
-      const token = _generateAuthToken(user.id);
+      const token = generateAuthToken(user.id);
       resp.send({
         success: true,
         message: "user profile registered",
@@ -81,10 +78,6 @@ function validate(admin) {
   };
 
   return Joi.validate(admin, schema);
-}
-
-function _generateAuthToken(adminId) {
-  return jwt.sign({ _id: adminId, isAdmin: this.isAdmin }, config.jwtPrivateKey);
 }
 
 module.exports = router;
