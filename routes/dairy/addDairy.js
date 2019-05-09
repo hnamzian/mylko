@@ -14,7 +14,11 @@ module.exports = async (req, resp) => {
 
   try {
     const result = await Dairy.create(dairy);
-    resp.send(result);
+    resp.send({
+      success: true,
+      message: "new dairy added",
+      dairy: result
+    });
   } catch (ex) {
     throw ex.errors[0].message;
   }
