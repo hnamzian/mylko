@@ -53,21 +53,6 @@ router.post("/verify-sms-code", [SMSTokenMW], async (req, resp) => {
   return resp.send({ success: false, message: "Invalid SMS Code" });
 });
 
-router.get("/", [AuthMW], async (req, resp) => {
-  const result = await Admin.findOne({
-    where: {
-      id: { [Op.eq]: req.userId }
-    }
-  });
-  const user = result.dataValues;
-
-  return resp.send({
-    success: true,
-    message: "user found successfuly",
-    user
-  });
-});
-
 async function _getSMSCode(mobile) {
   let smsCode;
   let expiredAt;
