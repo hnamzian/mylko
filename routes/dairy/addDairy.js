@@ -6,7 +6,8 @@ const express = require("express");
 router = express.Router();
 
 module.exports = async (req, resp) => {
-  const dairy = _.pick(req.body, ["name", "address", "AdminId"]);
+  const dairy = _.pick(req.body, ["name", "address"]);
+  dairy.AdminId = req.userId;
 
   const { error } = validate(dairy);
   if (error) return resp.status(400).send("Joi: " + error.details[0].message);
@@ -17,7 +18,7 @@ module.exports = async (req, resp) => {
   } catch (ex) {
     throw ex.errors[0].message;
   }
-}
+};
 
 function validate(dairy) {
   const schema = {
