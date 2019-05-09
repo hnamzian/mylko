@@ -4,7 +4,7 @@ require("express-async-errors");
 const deviceRouter = require("../routes/device");
 const milkingRouter = require("../routes/milking");
 const adminRouter = require("../routes/admin");
-const dairyRouter = require("../routes/dairy");
+const dairyRouter = require("../routes/dairy/dairy");
 const employeesRouter = require("../routes/employees");
 const authRouter = require("../routes/auth/auth");
 const error = require("../middleware/error");
