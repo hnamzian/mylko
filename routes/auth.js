@@ -1,5 +1,6 @@
 const { SMSToken, Admin } = require("../startup/db");
 const generateAuthToken = require("../utilities/generateAuthToken");
+const parseMobile = require("../utilities/parseMobile");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const Sequelize = require("sequelize");
@@ -30,15 +31,16 @@ router.post("/get-sms-code", async (req, resp) => {
 });
 
 router.post("/verify-sms-code", [SMSTokenMW], async (req, resp) => {
+  const mobile = parseMobile(req.mobile);
+
   const result = await SMSToken.findAll({
     where: {
-      mobile: { [Op.eq]: req.mobile },
+      mobile: { [Op.eq]: mobile },
       expiredAt: { [Op.gte]: req.expiredAt }
     }
   });
 
   if (result[0].dataValues.code == req.body.smsCode) {
-    let mobile = _parseMobile(req.mobile);
     const admin = { mobile: mobile };
     const result = await Admin.findOrCreate({ where: admin });
     const user = result[0].dataValues;
@@ -80,12 +82,6 @@ function _getRandomInt(length) {
   const min = 10 ** (length - 1);
   const max = 10 ** length - 1;
   return Math.floor(Math.random() * (max - min) + min);
-}
-
-function _parseMobile(mobile) {
-  if (!mobile.startsWith("0") && !mobile.startsWith("+98")) return false;
-
-  return mobile.startsWith("0") ? mobile.replaceAt(0, "+98") : mobile;
 }
 
 module.exports = router;
