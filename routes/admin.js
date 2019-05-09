@@ -10,7 +10,8 @@ const express = require("express");
 router = express.Router();
 
 router.post("/register", [SMSTokenMW], async (req, resp) => {
-  const admin = _.pick(req.body, ["firstName", "lastName", "mobile", "email", "address", "password"]);
+  let admin = _.pick(req.body, ["firstName", "lastName", "email", "address"]);
+  admin.mobile = req.mobile;
 
   const { error } = validate(admin);
   if (error) return resp.status(400).send("Joi: " + error.details[0].message);
