@@ -6,7 +6,7 @@ const milkingRouter = require("../routes/milking");
 const adminRouter = require("../routes/admin");
 const dairyRouter = require("../routes/dairy");
 const employeesRouter = require("../routes/employees");
-const authRouter = require("../routes/auth");
+const authRouter = require("../routes/auth/auth");
 const error = require("../middleware/error");
 
 module.exports = function(app) {
