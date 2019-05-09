@@ -2,6 +2,7 @@ const { Admin } = require("../startup/db");
 const SMSTokenMW = require("../middleware/SMSToken");
 const AuthTokenMW = require("../middleware/auth");
 const generateAuthToken = require("../utilities/generateAuthToken");
+const parseMobile = require("../utilities/parseMobile");
 const Joi = require("joi");
 const _ = require("lodash");
 const express = require("express");
@@ -9,7 +10,7 @@ router = express.Router();
 
 router.post("/register", [SMSTokenMW], async (req, resp) => {
   let admin = _.pick(req.body, ["firstName", "lastName", "email", "address"]);
-  admin.mobile = req.mobile;
+  admin.mobile = parseMobile(req.mobile);
 
   const { error } = validate(admin);
   if (error) return resp.status(400).send("Joi: " + error.details[0].message);
@@ -30,6 +31,7 @@ router.post("/register", [SMSTokenMW], async (req, resp) => {
 
 router.put("/update", [AuthTokenMW], async (req, resp) => {
   let admin = _.pick(req.body, ["firstName", "lastName", "mobile", "email", "address"]);
+  admin.mobile = parseMobile(admin.mobile);
 
   const { error } = validate(admin);
   if (error) return resp.status(400).send("Joi: " + error.details[0].message);
