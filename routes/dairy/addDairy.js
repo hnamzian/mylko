@@ -31,5 +31,3 @@ function validate(dairy) {
 
   return Joi.validate(dairy, schema);
 }
-
-module.exports = router;
