@@ -1,5 +1,6 @@
 const { SMSToken, Admin } = require("../startup/db");
 const generateAuthToken = require("../utilities/generateAuthToken");
+const generateSMSToken = require("../utilities/generateSMSToken");
 const parseMobile = require("../utilities/parseMobile");
 const jwt = require("jsonwebtoken");
 const config = require("config");
@@ -21,13 +22,7 @@ router.post("/get-sms-code", async (req, resp) => {
 
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
 
-  const smsToken = jwt.sign(
-    {
-      mobile,
-      exp: expiredAt
-    },
-    config.get("jwtPrivateKey")
-  );
+  const smsToken = generateSMSToken(mobile, expiredAt)
 
   return resp.send({
     success: true,
