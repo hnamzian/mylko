@@ -4,3 +4,5 @@ const express = require("express");
 const router = express.Router();
 
 router.post("/add", [authTokenMW], addDairy);
+
+module.exports = router;
