@@ -16,7 +16,6 @@ module.exports = async (req, resp) => {
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
   
   const smsToken = generateSMSToken(mobile, expiredAt);
-  console.log(smsToken)
 
   return resp.send({
     success: true,
