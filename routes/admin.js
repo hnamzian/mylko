@@ -1,4 +1,5 @@
 const { Admin } = require("../startup/db");
+const SMSTokenMW = require("../middleware/SMSToken");
 const config = require("config");
 const Joi = require("joi");
 const winston = require("winston");
@@ -8,7 +9,7 @@ const jwt = require("jsonwebtoken");
 const express = require("express");
 router = express.Router();
 
-router.post("/register", async (req, resp) => {
+router.post("/register", [SMSTokenMW], async (req, resp) => {
   const admin = _.pick(req.body, ["firstName", "lastName", "mobile", "email", "address", "password"]);
 
   const { error } = validate(admin);
