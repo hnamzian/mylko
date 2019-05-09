@@ -19,7 +19,12 @@ router.post("/register", [SMSTokenMW], async (req, resp) => {
   try {
     const result = await Admin.create(admin);
     const token = _generateAuthToken(result.dataValues.id);
-    resp.send(token);
+    resp.send({
+      success: true,
+      message: "user profile registered",
+      user: result[0].dataValues,
+      token
+    });
   } catch (ex) {
     throw ex.errors[0].message;
   }
