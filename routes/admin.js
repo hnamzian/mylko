@@ -10,7 +10,13 @@ router = express.Router();
 
 router.post("/register", [SMSTokenMW], async (req, resp) => {
   let admin = _.pick(req.body, ["firstName", "lastName", "email", "address"]);
+
   admin.mobile = parseMobile(req.mobile);
+  if (!admin.mobile)
+    return resp.send({
+      success: false,
+      message: "invalid mobile number"
+    });
 
   const { error } = validate(admin);
   if (error) return resp.status(400).send("Joi: " + error.details[0].message);
@@ -31,7 +37,13 @@ router.post("/register", [SMSTokenMW], async (req, resp) => {
 
 router.put("/update", [AuthTokenMW], async (req, resp) => {
   let admin = _.pick(req.body, ["firstName", "lastName", "mobile", "email", "address"]);
+
   admin.mobile = parseMobile(admin.mobile);
+  if (!admin.mobile)
+    return resp.send({
+      success: false,
+      message: "invalid mobile number"
+    });
 
   const { error } = validate(admin);
   if (error) return resp.status(400).send("Joi: " + error.details[0].message);
