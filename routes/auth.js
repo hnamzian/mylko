@@ -11,7 +11,7 @@ const express = require("express");
 const router = express.Router();
 
 router.post("/get-sms-code", async (req, resp) => {
-  const mobile = req.body.mobile;
+  const mobile = parseMobile(req.body.mobile);
 
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
 
