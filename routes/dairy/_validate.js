@@ -2,6 +2,7 @@ const Joi = require("joi");
 
 module.exports = dairy => {
   const schema = {
+    id: Joi.number(),
     name: Joi.string()
       .min(2)
       .required(),
