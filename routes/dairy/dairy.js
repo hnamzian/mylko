@@ -1,4 +1,4 @@
-const { Dairy } = require("../startup/db");
+const { Dairy } = require("../../startup/db");
 const Joi = require("joi");
 const winston = require("winston");
 const _ = require("lodash");
