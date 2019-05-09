@@ -13,6 +13,12 @@ const router = express.Router();
 router.post("/get-sms-code", async (req, resp) => {
   const mobile = parseMobile(req.body.mobile);
 
+  if (!mobile)
+    return resp.send({
+      success: false,
+      message: "invalid mobile number"
+    });
+
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
 
   const smsToken = jwt.sign(
@@ -32,6 +38,11 @@ router.post("/get-sms-code", async (req, resp) => {
 
 router.post("/verify-sms-code", [SMSTokenMW], async (req, resp) => {
   const mobile = parseMobile(req.mobile);
+  if (!mobile)
+    return resp.send({
+      success: false,
+      message: "invalid mobile number"
+    });
 
   const result = await SMSToken.findAll({
     where: {
