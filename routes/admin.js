@@ -16,10 +16,6 @@ router.post("/register", [SMSTokenMW], async (req, resp) => {
   const { error } = validate(admin);
   if (error) return resp.status(400).send("Joi: " + error.details[0].message);
 
-  const salt = await bcrypt.genSalt(10);
-  const hashed = await bcrypt.hash(admin.password, salt);
-  admin.password = hashed;
-
   try {
     const result = await Admin.create(admin);
     const token = jwt.sign({ _id: result.dataValues.id, isAdmin: this.isAdmin }, config.jwtPrivateKey);
