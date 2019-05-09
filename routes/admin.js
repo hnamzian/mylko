@@ -24,7 +24,7 @@ router.post("/register", [SMSTokenMW], async (req, resp) => {
   try {
     const result = await Admin.create(admin);
     const token = _generateAuthToken(result.dataValues.id);
-    resp.send({
+    return resp.send({
       success: true,
       message: "user profile registered",
       user: result[0].dataValues,
@@ -59,7 +59,7 @@ router.put("/update", [AuthTokenMW], async (req, resp) => {
       let userData = await Admin.findOne({ where: { id: req.userId, mobile: admin.mobile } });
       let user = userData.dataValues;
       const token = generateAuthToken(user.id);
-      resp.send({
+      return resp.send({
         success: true,
         message: "user profile registered",
         user,
