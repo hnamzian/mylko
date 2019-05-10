@@ -13,7 +13,11 @@ module.exports = async (req, resp) => {
 
   const smsToken = generateSMSToken(mobile, expiredAt);
 
-  return resp.send({ success: true, message: "sms code sent", smsCode, smsToken });
+  return resp.send({
+    success: true,
+    message: "sms code sent",
+    sms: { code: smsCode, token: smsToken }
+  });
 };
 
 async function _getSMSCode(mobile) {
