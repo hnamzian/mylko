@@ -1,22 +1,16 @@
-const { Admin } = require("../../startup/db");
+const findOrCreateAdmin = require("../../DAO/admin/findOrCreateAdmin");
 const validateSMSCode = require("../../DAO/sms/validateSMSCode");
 const generateAuthToken = require("../../utilities/generateAuthToken");
 const parseMobile = require("../../utilities/parseMobile");
 
 module.exports = async (req, resp) => {
   const mobile = parseMobile(req.mobile);
-  if (!mobile)
-    return resp.send({
-      success: false,
-      message: "invalid mobile number"
-    });
+  if (!mobile) return resp.send({ success: false, message: "invalid mobile number" });
 
-  const result = await validateSMSCode(mobile, req.body.smsCode)
+  const result = await validateSMSCode(mobile, req.body.smsCode);
 
   if (result && result.dataValues.code == req.body.smsCode) {
-    const admin = { mobile: mobile };
-    const result = await Admin.findOrCreate({ where: admin });
-    const user = result[0].dataValues;
+    const user = await findOrCreateAdmin({ mobile: mobile });
     const authToken = generateAuthToken(user.id);
     return resp.send({
       success: true,
