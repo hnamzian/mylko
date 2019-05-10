@@ -13,7 +13,7 @@ module.exports = async (req, resp) => {
 
   const result = await validateSMSCode(mobile, req.body.smsCode)
 
-  if (result.dataValues.code == req.body.smsCode) {
+  if (result && result.dataValues.code == req.body.smsCode) {
     const admin = { mobile: mobile };
     const result = await Admin.findOrCreate({ where: admin });
     const user = result[0].dataValues;
