@@ -1,6 +1,7 @@
 const addSMSCode = require("../../DAO/sms/addSMSToken");
 const getValidSMSCode = require("../../DAO/sms/getValidSMSCode");
 const generateSMSToken = require("../../utilities/generateSMSToken");
+const getRandomInt = require("../../utilities/getRandomInt");
 const parseMobile = require("../../utilities/parseMobile");
 
 module.exports = async (req, resp) => {
@@ -29,18 +30,12 @@ async function _getSMSCode(mobile) {
   let lastToken = await getValidSMSCode(mobile);
 
   if (lastToken == null) {
-    smsCode = _getRandomInt(6);
+    smsCode = getRandomInt(6);
     lastToken = await addSMSCode({ mobile, code: smsCode });
   }
-  
-  return { 
-    smsCode: lastToken.dataValues.code,
-    expiredAt: lastToken.dataValues.expiredAt 
-  };
-}
 
-function _getRandomInt(length) {
-  const min = 10 ** (length - 1);
-  const max = 10 ** length - 1;
-  return Math.floor(Math.random() * (max - min) + min);
+  return {
+    smsCode: lastToken.dataValues.code,
+    expiredAt: lastToken.dataValues.expiredAt
+  };
 }
