@@ -1,4 +1,3 @@
-const { SMSToken } = require("../../startup/db");
 const addSMSCode = require("../../DAO/sms/addSMSToken");
 const getValidSMSCode = require("../../DAO/sms/getValidSMSCode");
 const generateSMSToken = require("../../utilities/generateSMSToken");
@@ -15,7 +14,6 @@ module.exports = async (req, resp) => {
 
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
 
-  console.log(smsCode);
   const smsToken = generateSMSToken(mobile, expiredAt);
 
   return resp.send({
