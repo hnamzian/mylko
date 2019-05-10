@@ -1,15 +1,9 @@
-const { Dairy } = require("../../startup/db");
+const getDairiesDAO = require("../../DAO/dairy/getDairies");
 
 module.exports = async (req, resp) => {
-  const AdminId = req.userId;
+  const adminId = req.userId;
 
-  const result = await Dairy.findAll({
-    where: { AdminId: AdminId }
-  });
+  const result = await getDairiesDAO(adminId);
 
-  resp.send({
-    success: true,
-    message: "dairy found",
-    dairy: result
-  });
+  resp.send({ success: true, message: "dairy found", dairy: result });
 };
