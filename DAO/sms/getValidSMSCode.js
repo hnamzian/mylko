@@ -9,6 +9,5 @@ module.exports = async mobile => {
       expiredAt: { [Op.gte]: Date.now() / 1000 }
     }
   });
-  console.log(smsToken)
   return smsToken;
 };
