@@ -1,4 +1,4 @@
-const { Dairy } = require("../../startup/db");
+const addDairyDAO = require("../../DAO/dairy/addDairy");
 const Joi = require("joi");
 const winston = require("winston");
 const _ = require("lodash");
@@ -11,9 +11,9 @@ module.exports = async (req, resp) => {
 
   const { error } = validate(dairy);
   if (error) return resp.status(400).send("Joi: " + error.details[0].message);
-
+  
   try {
-    const result = await Dairy.create(dairy);
+    const result = await addDairyDAO(dairy);
     resp.send({
       success: true,
       message: "new dairy added",
