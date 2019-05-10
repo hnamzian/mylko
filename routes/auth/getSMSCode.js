@@ -16,6 +16,7 @@ module.exports = async (req, resp) => {
 
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
 
+  console.log(smsCode)
   const smsToken = generateSMSToken(mobile, expiredAt);
 
   return resp.send({
@@ -36,10 +37,9 @@ async function _getSMSCode(mobile) {
     expiredAt = Math.floor(Date.now() / 1000) + 10 * 60;
     await SMSToken.create({ mobile, code: smsCode, expiredAt });
   } else {
-    smsCode = lastToken[0].dataValues.code;
-    expiredAt = lastToken[0].dataValues.expiredAt;
+    smsCode = lastToken.dataValues.code;
+    expiredAt = lastToken.dataValues.expiredAt;
   }
-
   return { smsCode, expiredAt };
 }
 
