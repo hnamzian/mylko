@@ -27,13 +27,11 @@ module.exports = async (req, resp) => {
 
 async function _getSMSCode(mobile) {
   let smsCode;
-  let expiredAt;
 
   let lastToken = await getValidSMSCode(mobile);
 
   if (lastToken == null) {
     smsCode = _getRandomInt(6);
-    expiredAt = Math.floor(Date.now() / 1000) + 10 * 60;
     lastToken = await addSMSCode({ mobile, code: smsCode });
   }
   
