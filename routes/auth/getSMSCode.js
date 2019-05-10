@@ -35,11 +35,12 @@ async function _getSMSCode(mobile) {
     smsCode = _getRandomInt(6);
     expiredAt = Math.floor(Date.now() / 1000) + 10 * 60;
     lastToken = await addSMSCode({ mobile, code: smsCode });
-  } else {
-    smsCode = lastToken.dataValues.code;
-    expiredAt = lastToken.dataValues.expiredAt;
   }
-  return { smsCode, expiredAt };
+  
+  return { 
+    smsCode: lastToken.dataValues.code,
+    expiredAt: lastToken.dataValues.expiredAt 
+  };
 }
 
 function _getRandomInt(length) {
