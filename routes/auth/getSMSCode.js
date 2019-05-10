@@ -1,5 +1,5 @@
 const { SMSToken } = require("../../startup/db");
-const getValidSMSToken = require("../../DAO/sms/getValidSMSToken");
+const getValidSMSCode = require("../../DAO/sms/getValidSMSCode");
 const generateSMSToken = require("../../utilities/generateSMSToken");
 const parseMobile = require("../../utilities/parseMobile");
 const Sequelize = require("sequelize");
@@ -29,7 +29,7 @@ async function _getSMSCode(mobile) {
   let smsCode;
   let expiredAt;
 
-  let lastToken = await getValidSMSToken(mobile);
+  let lastToken = await getValidSMSCode(mobile);
   
   if (lastToken == null) {
     smsCode = _getRandomInt(6);
