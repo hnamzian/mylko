@@ -6,5 +6,7 @@ module.exports = async (req, resp) => {
 
   const result = await getDairyDAO(dairyId, adminId);
 
-  resp.send({ success: true, message: "dairy found", dairy: result });
+  if (result) return resp.send({ success: true, message: "dairy found", dairy: result });
+
+  return resp.send({ success: false, message: "dairy not found" });
 };
