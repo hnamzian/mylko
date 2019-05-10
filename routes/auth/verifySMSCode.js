@@ -1,8 +1,7 @@
-const { SMSToken, Admin } = require("../../startup/db");
+const { Admin } = require("../../startup/db");
+const validateSMSCode = require("../../DAO/sms/validateSMSCode");
 const generateAuthToken = require("../../utilities/generateAuthToken");
 const parseMobile = require("../../utilities/parseMobile");
-const Sequelize = require("sequelize");
-const Op = Sequelize.Op;
 
 module.exports = async (req, resp) => {
   const mobile = parseMobile(req.mobile);
@@ -12,14 +11,9 @@ module.exports = async (req, resp) => {
       message: "invalid mobile number"
     });
 
-  const result = await SMSToken.findAll({
-    where: {
-      mobile: { [Op.eq]: mobile },
-      expiredAt: { [Op.gte]: req.expiredAt }
-    }
-  });
+  const result = await validateSMSCode(mobile, req.body.smsCode)
 
-  if (result[0].dataValues.code == req.body.smsCode) {
+  if (result.dataValues.code == req.body.smsCode) {
     const admin = { mobile: mobile };
     const result = await Admin.findOrCreate({ where: admin });
     const user = result[0].dataValues;
