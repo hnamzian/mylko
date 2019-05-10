@@ -1,9 +1,8 @@
 const { SMSToken } = require("../../startup/db");
+const addSMSCode = require("../../DAO/sms/addSMSToken");
 const getValidSMSCode = require("../../DAO/sms/getValidSMSCode");
 const generateSMSToken = require("../../utilities/generateSMSToken");
 const parseMobile = require("../../utilities/parseMobile");
-const Sequelize = require("sequelize");
-const Op = Sequelize.Op;
 
 module.exports = async (req, resp) => {
   const mobile = parseMobile(req.body.mobile);
@@ -16,7 +15,7 @@ module.exports = async (req, resp) => {
 
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
 
-  console.log(smsCode)
+  console.log(smsCode);
   const smsToken = generateSMSToken(mobile, expiredAt);
 
   return resp.send({
@@ -31,11 +30,11 @@ async function _getSMSCode(mobile) {
   let expiredAt;
 
   let lastToken = await getValidSMSCode(mobile);
-  
+
   if (lastToken == null) {
     smsCode = _getRandomInt(6);
     expiredAt = Math.floor(Date.now() / 1000) + 10 * 60;
-    await SMSToken.create({ mobile, code: smsCode, expiredAt });
+    lastToken = await addSMSCode({ mobile, code: smsCode });
   } else {
     smsCode = lastToken.dataValues.code;
     expiredAt = lastToken.dataValues.expiredAt;
