@@ -16,19 +16,24 @@ const WeightModel = require("../models/weight");
 const WoolModel = require("../models/wool");
 const SMSTokenModel = require("../models/SMSToken");
 
-const sequelize = new Sequelize(config.get("db_database"), config.get("db_user"), config.get("db_password"), {
-  host: config.get("db_host"),
-  dialect: "mysql",
-  operatorsAliases: false,
-  logging: false,
+const sequelize = new Sequelize(
+  config.get("db_database"),
+  config.get("db_user"),
+  config.get("db_password"),
+  {
+    host: config.get("db_host"),
+    dialect: "mysql",
+    operatorsAliases: false,
+    logging: false,
 
-  pool: {
-    max: 5,
-    min: 0,
-    acquire: 30000,
-    idle: 10000
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
   }
-});
+);
 
 const Device = DeviceModel(sequelize, Sequelize);
 const Milking = MilkingModel(sequelize, Sequelize);
@@ -45,6 +50,7 @@ Dairy.belongsTo(Admin, { foreignKey: { allowNull: false } });
 
 const Employees = EmployeesModel(sequelize, Sequelize);
 Employees.belongsTo(Dairy, { foreignKey: { allowNull: false } });
+Employees.belongsTo(Admin, { foreignKey: { allowNull: false } });
 
 const Disease = DiseaseModel(sequelize, Sequelize);
 Disease.belongsTo(Animals);
