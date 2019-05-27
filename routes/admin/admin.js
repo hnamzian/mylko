@@ -5,6 +5,7 @@ const generateAuthToken = require("../../utilities/generateAuthToken");
 const parseMobile = require("../../utilities/parseMobile");
 const Joi = require("joi");
 const _ = require("lodash");
+const getAdmin = require("./getAdmin");
 const express = require("express");
 router = express.Router();
 
@@ -76,20 +77,7 @@ router.put("/update", [AuthTokenMW], async (req, resp) => {
   }
 });
 
-router.get("/", [AuthTokenMW], async (req, resp) => {
-  const result = await Admin.findOne({
-    where: { id: req.userId }
-  });
-  const user = result.dataValues;
-  const token = generateAuthToken(user.id);
-
-  return resp.send({
-    success: true,
-    message: "user found successfuly",
-    user,
-    token
-  });
-});
+router.get("/", [AuthTokenMW], getAdmin);
 
 function validate(admin) {
   const schema = {
