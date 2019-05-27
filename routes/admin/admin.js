@@ -1,8 +1,8 @@
-const { Admin } = require("../startup/db");
-const SMSTokenMW = require("../middleware/SMSToken");
-const AuthTokenMW = require("../middleware/auth");
-const generateAuthToken = require("../utilities/generateAuthToken");
-const parseMobile = require("../utilities/parseMobile");
+const { Admin } = require("../../startup/db");
+const SMSTokenMW = require("../../middleware/SMSToken");
+const AuthTokenMW = require("../../middleware/auth");
+const generateAuthToken = require("../../utilities/generateAuthToken");
+const parseMobile = require("../../utilities/parseMobile");
 const Joi = require("joi");
 const _ = require("lodash");
 const express = require("express");
