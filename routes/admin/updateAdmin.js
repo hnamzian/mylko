@@ -6,7 +6,7 @@ const _ = require("lodash");
 
 module.exports = async (req, resp) => {
   let admin = _.pick(req.body, ["firstName", "lastName", "mobile", "email", "address"]);
-
+  
   admin.mobile = parseMobile(admin.mobile);
   if (!admin.mobile) return resp.send({ success: false, message: "invalid mobile number" });
 
@@ -16,7 +16,7 @@ module.exports = async (req, resp) => {
   try {
     const adminProfile = await updateAdminDAO(admin);
     if (adminProfile) {
-      const token = generateAuthToken(user.id);
+      const token = generateAuthToken(admin.id);
 
       return resp.send({
         success: true,
