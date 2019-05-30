@@ -1,3 +1,5 @@
+const Joi = require("joi");
+
 module.exports = function validate(admin) {
   const schema = {
     firstName: Joi.string().min(2),
