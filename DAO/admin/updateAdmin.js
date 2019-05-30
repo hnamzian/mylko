@@ -1,7 +1,6 @@
 const { Admin } = require("../../startup/db");
 
 module.exports = async admin => {
-  console.log(admin)
   const [numberOfAffectedRows, affectedRows] = await Admin.update(admin, {
     where: { mobile: admin.mobile },
     returning: true,
