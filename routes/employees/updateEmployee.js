@@ -1,5 +1,5 @@
 const updateEmployeeDAO = require("../../DAO/employee/updateEmployee");
-const validate = require("./validate");
+const Joi = require("joi");
 const _ = require("lodash");
 
 module.exports = async (req, resp) => {
@@ -24,4 +24,32 @@ module.exports = async (req, resp) => {
   }
 
   return resp.send({ success: false, message: "invalid arguments" });
+};
+
+validate = function(employee) {
+  const schema = {
+    id: Joi.number().required(),
+    firstName: Joi.string()
+      .min(2)
+      .required(),
+    lastName: Joi.string()
+      .min(2)
+      .required(),
+    mobile: Joi.string()
+      .min(11)
+      .max(13),
+    email: Joi.string()
+      .min(5)
+      .max(255)
+      .email(),
+    address: Joi.string().min(0),
+    position: Joi.string()
+      .min(5)
+      .max(255)
+      .required(),
+    DairyId: Joi.number().required(),
+    AdminId: Joi.number().required()
+  };
+
+  return Joi.validate(employee, schema);
 };
