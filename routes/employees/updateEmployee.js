@@ -19,5 +19,5 @@ module.exports = async (req, resp) => {
     return resp.send({ success: true, message: "employee updated", employee: result });
   }
 
-  return resp.send({ success: true, message: "invalid arguments" });
+  return resp.send({ success: false, message: "invalid arguments" });
 };
