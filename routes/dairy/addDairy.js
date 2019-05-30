@@ -1,4 +1,5 @@
 const addDairyDAO = require("../../DAO/dairy/addDairy");
+const getDairiesDAO = require("../../DAO/dairy/getDairies");
 const Joi = require("joi");
 const winston = require("winston");
 const _ = require("lodash");
@@ -11,13 +12,14 @@ module.exports = async (req, resp) => {
 
   const { error } = validate(dairy);
   if (error) return resp.status(400).send("Joi: " + error.details[0].message);
-  
+
   try {
-    const result = await addDairyDAO(dairy);
+    await addDairyDAO(dairy);
+    const dairies = await getDairiesDAO(dairy.AdminId);
     resp.send({
       success: true,
       message: "new dairy added",
-      dairy: result
+      dairies
     });
   } catch (ex) {
     throw ex.errors[0].message;
