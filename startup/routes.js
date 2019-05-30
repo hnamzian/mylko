@@ -3,7 +3,7 @@ const express = require("express");
 require("express-async-errors");
 const deviceRouter = require("../routes/device");
 const milkingRouter = require("../routes/milking");
-const adminRouter = require("../routes/admin");
+const adminRouter = require("../routes/admin/admin");
 const dairyRouter = require("../routes/dairy/dairy");
 const employeesRouter = require("../routes/employees/employees");
 const authRouter = require("../routes/auth/auth");
