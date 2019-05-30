@@ -1,4 +1,5 @@
 const updateEmployeeDAO = require("../../DAO/employee/updateEmployee");
+const validate = require("./validate");
 const _ = require("lodash");
 
 module.exports = async (req, resp) => {
@@ -13,6 +14,9 @@ module.exports = async (req, resp) => {
     "DairyId"
   ]);
   employee.AdminId = req.userId;
+
+  const { error } = validate(employee);
+  if (error) return resp.status(400).send({ success: false, message: error.details[0].message });
 
   const result = await updateEmployeeDAO(employee);
   if (result) {
