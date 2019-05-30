@@ -9,7 +9,7 @@ module.exports = async (req, resp) => {
     return resp.send({
       success: true,
       message: "Login successful",
-      user: admin,
+      admin: admin,
       token
     });
   }
