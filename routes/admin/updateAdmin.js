@@ -5,8 +5,9 @@ const parseMobile = require("../../utilities/parseMobile");
 const _ = require("lodash");
 
 module.exports = async (req, resp) => {
-  let admin = _.pick(req.body, ["firstName", "lastName", "mobile", "email", "address"]);
-  
+  let admin = _.pick(req.body, ["id", "firstName", "lastName", "mobile", "email", "address"]);
+  if (admin.id != req.userId) return resp.send({ success: false, message: "user mismatch" });
+
   admin.mobile = parseMobile(admin.mobile);
   if (!admin.mobile) return resp.send({ success: false, message: "invalid mobile number" });
 
