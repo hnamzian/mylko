@@ -13,18 +13,20 @@ module.exports = async (req, resp) => {
   const { error } = validate(admin);
   if (error) return resp.status(400).send("Joi: " + error.details[0].message);
 
-  const adminProfile = await updateAdminDAO(admin);
+  try {
+    const adminProfile = await updateAdminDAO(admin);
+    if (adminProfile) {
+      const token = generateAuthToken(user.id);
 
-  if (adminProfile) {
-    const token = generateAuthToken(user.id);
-
-    return resp.send({
-      success: true,
-      message: "user profile registered",
-      admin: adminProfile,
-      token
-    });
+      return resp.send({
+        success: true,
+        message: "user profile registered",
+        admin: adminProfile,
+        token
+      });
+    }
+    resp.send({ success: false, message: "invalid user" });
+  } catch (ex) {
+    throw ex.errors[0].message;
   }
-
-  resp.send({ success: false, message: "invalid user" });
 };
