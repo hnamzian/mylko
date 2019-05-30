@@ -12,7 +12,7 @@ module.exports = async (req, resp) => {
   if (!admin.mobile) return resp.send({ success: false, message: "invalid mobile number" });
 
   const { error } = validate(admin);
-  if (error) return resp.status(400).send("Joi: " + error.details[0].message);
+  if (error) return resp.status(400).send({ success: false, message: error.details[0].message });
 
   try {
     const adminProfile = await updateAdminDAO(admin);
