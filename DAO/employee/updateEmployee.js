@@ -2,7 +2,6 @@ const { Employees } = require("../../startup/db");
 
 module.exports = async employee => {
   try {
-    console.log(employee)
     const [_, affectedRows] = await Employees.update(employee, {
       where: { id: employee.id, DairyId: employee.DairyId, AdminId: employee.AdminId },
       returning: true,
