@@ -2,6 +2,7 @@ const Joi = require("joi");
 
 module.exports = function validate(admin) {
   const schema = {
+    id: Joi.number(),
     firstName: Joi.string().min(2),
     lastName: Joi.string().min(2),
     mobile: Joi.string()
