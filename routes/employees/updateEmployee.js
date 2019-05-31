@@ -1,4 +1,5 @@
 const updateEmployeeDAO = require("../../DAO/employee/updateEmployee");
+const parseMobile = require("../../utilities/parseMobile");
 const Joi = require("joi");
 const _ = require("lodash");
 
@@ -14,6 +15,9 @@ module.exports = async (req, resp) => {
     "DairyId"
   ]);
   employee.AdminId = req.userId;
+
+  employee.mobile = parseMobile(employee.mobile);
+  if (!employee.mobile) return resp.send({ success: false, message: "invalid mobile number" });
 
   const { error } = validate(employee);
   if (error) return resp.status(400).send({ success: false, message: error.details[0].message });
