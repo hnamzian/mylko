@@ -20,6 +20,7 @@ module.exports = employee => {
       .min(5)
       .max(255)
       .required(),
+    hiringDate: Joi.string(),
     DairyId: Joi.number().required()
   };
 
