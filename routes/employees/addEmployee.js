@@ -12,6 +12,7 @@ module.exports = async (req, resp) => {
     "email",
     "address",
     "position",
+    "hiringDate",
     "DairyId"
   ]);
 
