@@ -12,6 +12,7 @@ module.exports = async (req, resp) => {
     "email",
     "address",
     "position",
+    "hiringDate",
     "DairyId"
   ]);
   employee.AdminId = req.userId;
@@ -51,6 +52,7 @@ validate = function(employee) {
       .min(5)
       .max(255)
       .required(),
+    hiringDate: Joi.string(),
     DairyId: Joi.number().required(),
     AdminId: Joi.number().required()
   };
