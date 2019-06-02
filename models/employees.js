@@ -24,6 +24,10 @@ module.exports = (sequelize, Sequelize) => {
     position: {
       type: Sequelize.STRING,
       allowNull: false
+    },
+    hiringDate: {
+      type: Sequelize.STRING,
+      allowNull: true
     }
   });
 };
