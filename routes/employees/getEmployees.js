@@ -13,5 +13,5 @@ module.exports = async (req, resp) => {
     });
   }
 
-  return resp.send({ success: false, message: "employee not found" });
+  throw Error("employee not found");
 };
