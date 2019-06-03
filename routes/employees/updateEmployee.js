@@ -18,17 +18,17 @@ module.exports = async (req, resp) => {
   employee.AdminId = req.userId;
 
   employee.mobile = parseMobile(employee.mobile);
-  if (!employee.mobile) return resp.send({ success: false, message: "invalid mobile number" });
+  if (!employee.mobile) throw Error("invalid mobile number");
 
   const { error } = validate(employee);
-  if (error) return resp.status(400).send({ success: false, message: error.details[0].message });
+  if (error) throw Error(error.details[0].message);
 
   const result = await updateEmployeeDAO(employee);
   if (result) {
     return resp.send({ success: true, message: "employee updated", employee: result });
   }
 
-  return resp.send({ success: false, message: "invalid arguments" });
+  throw Error("invalid arguments");
 };
 
 validate = function(employee) {
