@@ -23,5 +23,6 @@ module.exports = async (req, resp) => {
       token
     });
   }
-  return resp.send({ success: true, message: "Admin user not created" });
+  
+  throw Error("Admin user not created");
 };
