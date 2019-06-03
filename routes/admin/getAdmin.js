@@ -1,6 +1,6 @@
 const findAdminByIdDAO = require("../../DAO/admin/findAdminById");
 
-module.exports = async (err, req, resp) => {
+module.exports = async (req, resp) => {
   const user = await findAdminByIdDAO(req.userId);
 
   if (user) {
