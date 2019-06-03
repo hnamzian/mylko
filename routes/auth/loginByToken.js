@@ -13,8 +13,6 @@ module.exports = async (req, resp) => {
       token
     });
   }
-  return resp.send({
-    success: false,
-    message: "login failed"
-  });
+
+  throw Error("login failed");
 };
