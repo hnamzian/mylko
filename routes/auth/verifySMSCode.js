@@ -5,7 +5,7 @@ const parseMobile = require("../../utilities/parseMobile");
 
 module.exports = async (req, resp) => {
   const mobile = parseMobile(req.mobile);
-  if (!mobile) return resp.send({ success: false, message: "invalid mobile number" });
+  if (!mobile) throw Error("invalid mobile number");
 
   const result = await validateSMSCode(mobile, req.body.smsCode);
 
@@ -19,5 +19,6 @@ module.exports = async (req, resp) => {
       token: authToken
     });
   }
-  return resp.send({ success: false, message: "Invalid SMS Code" });
+
+  throw Error("Invalid SMS Code");
 };
