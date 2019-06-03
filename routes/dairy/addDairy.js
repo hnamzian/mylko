@@ -11,7 +11,7 @@ module.exports = async (req, resp) => {
   dairy.AdminId = req.userId;
 
   const { error } = validate(dairy);
-  if (error) return resp.status(400).send("Joi: " + error.details[0].message);
+  if (error) throw Error(error.details[0].message);
 
   try {
     await addDairyDAO(dairy);
