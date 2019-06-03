@@ -7,5 +7,5 @@ module.exports = async (req, resp) => {
   const result = await deleteDairyDAO(dairyId, adminId);
 
   if (result) return resp.send({ success: true, message: "dairy deleted" });
-  return resp.send({ success: false, message: "dairy not found" });
+  throw Error("dairy not found");
 };
