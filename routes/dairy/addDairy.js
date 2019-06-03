@@ -13,17 +13,13 @@ module.exports = async (req, resp) => {
   const { error } = validate(dairy);
   if (error) throw Error(error.details[0].message);
 
-  try {
-    await addDairyDAO(dairy);
-    const dairies = await getDairiesDAO(dairy.AdminId);
-    resp.send({
-      success: true,
-      message: "new dairy added",
-      dairies
-    });
-  } catch (ex) {
-    throw ex.errors[0].message;
-  }
+  await addDairyDAO(dairy);
+  const dairies = await getDairiesDAO(dairy.AdminId);
+  resp.send({
+    success: true,
+    message: "new dairy added",
+    dairies
+  });
 };
 
 function validate(dairy) {
