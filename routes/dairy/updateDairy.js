@@ -7,17 +7,13 @@ module.exports = async (req, resp) => {
   dairy.AdminId = req.userId;
 
   const { error } = validate(dairy);
-  if (error) return resp.status(400).send("Joi: " + error.details[0].message);
+  if (error) throw Error(error.details[0].message);
 
-  try {
-    let dairyData = await updateDairyDAO(dairy);
+  let dairyData = await updateDairyDAO(dairy);
 
-    if (dairyData) {
-      return resp.send({ success: true, message: "dairy updated", dairy: dairyData });
-    }
-
-    resp.send({ success: false, message: "invalid dairy" });
-  } catch (ex) {
-    throw ex.errors[0].message;
+  if (dairyData) {
+    return resp.send({ success: true, message: "dairy updated", dairy: dairyData });
   }
+
+  throw Error("invalid dairy");
 };
