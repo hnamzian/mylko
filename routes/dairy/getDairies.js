@@ -8,5 +8,5 @@ module.exports = async (req, resp) => {
   if (result && result.length)
     return resp.send({ success: true, message: "dairy found", dairies: result });
 
-  return resp.send({ success: false, message: "dairy not found" });
+  throw Error("dairy not found");
 };
