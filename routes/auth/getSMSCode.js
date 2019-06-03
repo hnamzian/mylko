@@ -7,7 +7,7 @@ const parseMobile = require("../../utilities/parseMobile");
 module.exports = async (req, resp) => {
   const mobile = parseMobile(req.body.mobile);
 
-  if (!mobile) return resp.send({ success: false, message: "invalid mobile number" });
+  if (!mobile) throw Error("invalid mobile number");
 
   const { smsCode, expiredAt } = await _getSMSCode(mobile);
 
