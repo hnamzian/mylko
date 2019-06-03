@@ -17,10 +17,10 @@ module.exports = async (req, resp) => {
   ]);
 
   employee.mobile = parseMobile(employee.mobile);
-  if (!employee.mobile) return resp.send({ success: false, message: "invalid mobile number" });
+  if (!employee.mobile) throw Error("invalid mobile number");
 
   const { error } = validate(employee);
-  if (error) return resp.status(400).send("Joi: " + error.details[0].message);
+  if (error) throw Error(error.details[0].message);
 
   const adminId = req.userId;
   const dairyAdmin = await getDairyAdmin(employee.DairyId);
@@ -29,5 +29,6 @@ module.exports = async (req, resp) => {
     const result = await addEmployeeDAO(employee);
     return resp.send({ success: true, message: "employee added", employee: result });
   }
-  return resp.send({ success: true, message: "invalid arguments" });
+
+  throw Error("invalid arguments");
 };
